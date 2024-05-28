@@ -5773,11 +5773,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\daotaoSDS\\Bai1\\QLSinhVien_SDS_daotao\\QLSinhVien_SDS_daotao.csproj",
+      "projectUniqueName": "D:\\QuanLyHsSDS\\QuanLySV\\QLSinhVien_SDS_daotao\\QLSinhVien_SDS_daotao.csproj",
       "projectName": "QLSinhVien_SDS_daotao",
-      "projectPath": "D:\\daotaoSDS\\Bai1\\QLSinhVien_SDS_daotao\\QLSinhVien_SDS_daotao.csproj",
+      "projectPath": "D:\\QuanLyHsSDS\\QuanLySV\\QLSinhVien_SDS_daotao\\QLSinhVien_SDS_daotao.csproj",
       "packagesPath": "C:\\Users\\lexuanmuoi\\.nuget\\packages\\",
-      "outputPath": "D:\\daotaoSDS\\Bai1\\QLSinhVien_SDS_daotao\\obj\\",
+      "outputPath": "D:\\QuanLyHsSDS\\QuanLySV\\QLSinhVien_SDS_daotao\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

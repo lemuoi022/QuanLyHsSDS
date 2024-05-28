@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "pwKnOOIu87BCBRA9sSW/QKZJtr/JXiOAq7C3vw+KXCV6HpwDKG//yo1UaO+XJBeNfcA8MpuFQ4uB/sQxFsG0UQ==",
+  "dgSpecHash": "Aw9NRoe/mxswbqfScajL1LzbxT4Fu2EiP6NvtSJdQAj+yMlwT9yxDmZhID4Y5c06JCF/4XV1eEOT8rHjP/DDmg==",
   "success": true,
-  "projectFilePath": "D:\\daotaoSDS\\Bai1\\QLSinhVien_SDS_daotao\\QLSinhVien_SDS_daotao.csproj",
+  "projectFilePath": "D:\\QuanLyHsSDS\\QuanLySV\\QLSinhVien_SDS_daotao\\QLSinhVien_SDS_daotao.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lexuanmuoi\\.nuget\\packages\\antlr3.runtime\\3.5.1\\antlr3.runtime.3.5.1.nupkg.sha512",
     "C:\\Users\\lexuanmuoi\\.nuget\\packages\\fluentnhibernate\\3.3.0\\fluentnhibernate.3.3.0.nupkg.sha512",
