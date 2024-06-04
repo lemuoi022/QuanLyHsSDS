@@ -1,0 +1,56 @@
+﻿@page "/"
+@using System.ComponentModel
+
+@using BlazorQuanLySinhVien.Service;
+@using BlazorQuanLySinhVien.ServiceBlazor.Interface;
+@using QuanLySvGRPC.Protos
+@inject ISinhVienServiceBlazor _sinhVienService
+@inject IMessageService _message;
+
+<h3>Danh sách sinh viên</h3>
+
+<div>
+    <GridRow>
+        <GridCol Span="24">
+           
+            <PopupSinhVien @ref="popupSinhVien" Clear="Clear" IsCreate="isCreate" OnAddSinhVien="HandleAddSinhVien"></PopupSinhVien>
+            <br />
+            <Space>
+                <SpaceItem> 
+                    <Search Placeholder="Id" EnterButton="true" @bind-Value="@txtValue" OnSearch="searchSinhVienAsync" />
+
+                </SpaceItem>
+              @*  <SpaceItem>
+                    <Search Placeholder="Tên"  EnterButton="true" @bind-Value="@txtValue" OnSearch="OnSearch" />
+
+                </SpaceItem>*@
+            </Space>
+           
+           
+            <br />
+            <Table DataSource="@listSinhVien" PageSize="10" ScrollX="1000" ScrollY="300">
+                <Column @bind-Field="context.Stt" Width="50" Fixed="left" Title="STT" Align="ColumnAlign.Center"/>
+                <Column @bind-Field="context.ID" Width="50" Fixed="left"  Title="ID" Align="ColumnAlign.Center" />
+                <Column @bind-Field="context.Ten" Fixed="left" Title="Tên" />
+                <Column @bind-Field="context.NgaySinh"  Title="Ngày Sinh" Format="dd-MM-yyyy"/>
+                <Column @bind-Field="context.DiaChi"  Title="Địa Chỉ" />
+                <Column @bind-Field="context.TenLop" Title="Tên Lớp" />
+                <Column @bind-Field="context.IdLopHoc" Title="ID Lớp học" Hidden/>
+              
+                <ActionColumn Title="Action">
+                    <Space>
+                        <SpaceItem><Button OnClick="() => DetailUpdateSinhVien(context)" Type="@ButtonType.Primary">Chi tiết</Button></SpaceItem>
+                    </Space>
+                    <Space>
+                        <SpaceItem>
+                            <Popconfirm Title="Bạn chắc muốn xoá" OkText="Yes" CancelText="No" OnConfirm="()=>DeleteSinhVien(context)">
+                                <Button Danger><Icon Type="delete" Theme="outline" /></Button>
+                            </Popconfirm>
+                        </SpaceItem>
+                    </Space>
+                </ActionColumn>
+            </Table>
+        </GridCol>   
+    </GridRow>
+</div>
+

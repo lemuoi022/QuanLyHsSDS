@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BlazorQuanLySinhVien", "BlazorQuanLySinhVien.csproj", "{20961446-83D8-474B-9599-61DC48B3027C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuanLySvGRPC", "..\gRPCSinhVien\QuanLySvGRPC\QuanLySvGRPC.csproj", "{0A50A93C-D140-4B87-B5EE-CC96D4E9A2E9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{20961446-83D8-474B-9599-61DC48B3027C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20961446-83D8-474B-9599-61DC48B3027C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20961446-83D8-474B-9599-61DC48B3027C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20961446-83D8-474B-9599-61DC48B3027C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A50A93C-D140-4B87-B5EE-CC96D4E9A2E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A50A93C-D140-4B87-B5EE-CC96D4E9A2E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A50A93C-D140-4B87-B5EE-CC96D4E9A2E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A50A93C-D140-4B87-B5EE-CC96D4E9A2E9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C477EE6-7DEA-441C-8396-70FC319F48A8}
+	EndGlobalSection
+EndGlobal
