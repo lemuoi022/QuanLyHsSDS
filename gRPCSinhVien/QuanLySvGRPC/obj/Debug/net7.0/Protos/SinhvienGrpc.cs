@@ -56,6 +56,10 @@ namespace QuanLySvGRPC.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.BoolValue> __Marshaller_google_protobuf_BoolValue = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Protobuf.WellKnownTypes.BoolValue.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::QuanLySvGRPC.Protos.PageSinhVienRequest> __Marshaller_sinhvien_PageSinhVienRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::QuanLySvGRPC.Protos.PageSinhVienRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::QuanLySvGRPC.Protos.PageSinhVienReply> __Marshaller_sinhvien_PageSinhVienReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::QuanLySvGRPC.Protos.PageSinhVienReply.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::QuanLySvGRPC.Protos.LopHocRequest> __Marshaller_sinhvien_LopHocRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::QuanLySvGRPC.Protos.LopHocRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::QuanLySvGRPC.Protos.ListLopHocReply> __Marshaller_sinhvien_ListLopHocReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::QuanLySvGRPC.Protos.ListLopHocReply.Parser));
@@ -107,6 +111,14 @@ namespace QuanLySvGRPC.Protos {
         "ArrangeSinhVien",
         __Marshaller_sinhvien_SinhVienRequest,
         __Marshaller_sinhvien_ListSinhVienReply);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::QuanLySvGRPC.Protos.PageSinhVienRequest, global::QuanLySvGRPC.Protos.PageSinhVienReply> __Method_GetPageSinhVien = new grpc::Method<global::QuanLySvGRPC.Protos.PageSinhVienRequest, global::QuanLySvGRPC.Protos.PageSinhVienReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetPageSinhVien",
+        __Marshaller_sinhvien_PageSinhVienRequest,
+        __Marshaller_sinhvien_PageSinhVienReply);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::QuanLySvGRPC.Protos.LopHocRequest, global::QuanLySvGRPC.Protos.ListLopHocReply> __Method_GetAllLopHoc = new grpc::Method<global::QuanLySvGRPC.Protos.LopHocRequest, global::QuanLySvGRPC.Protos.ListLopHocReply>(
@@ -163,6 +175,12 @@ namespace QuanLySvGRPC.Protos {
       }
 
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::QuanLySvGRPC.Protos.PageSinhVienReply> GetPageSinhVien(global::QuanLySvGRPC.Protos.PageSinhVienRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::System.Threading.Tasks.Task<global::QuanLySvGRPC.Protos.ListLopHocReply> GetAllLopHoc(global::QuanLySvGRPC.Protos.LopHocRequest request, grpc::ServerCallContext context)
       {
         throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
@@ -182,6 +200,7 @@ namespace QuanLySvGRPC.Protos {
           .AddMethod(__Method_DeleteSinhVien, serviceImpl.DeleteSinhVien)
           .AddMethod(__Method_AddSinhVien, serviceImpl.AddSinhVien)
           .AddMethod(__Method_ArrangeSinhVien, serviceImpl.ArrangeSinhVien)
+          .AddMethod(__Method_GetPageSinhVien, serviceImpl.GetPageSinhVien)
           .AddMethod(__Method_GetAllLopHoc, serviceImpl.GetAllLopHoc).Build();
     }
 
@@ -198,6 +217,95 @@ namespace QuanLySvGRPC.Protos {
       serviceBinder.AddMethod(__Method_DeleteSinhVien, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::QuanLySvGRPC.Protos.SinhVienRequest, global::Google.Protobuf.WellKnownTypes.BoolValue>(serviceImpl.DeleteSinhVien));
       serviceBinder.AddMethod(__Method_AddSinhVien, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::QuanLySvGRPC.Protos.SinhVienModelRequest, global::QuanLySvGRPC.Protos.SinhVienReply>(serviceImpl.AddSinhVien));
       serviceBinder.AddMethod(__Method_ArrangeSinhVien, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::QuanLySvGRPC.Protos.SinhVienRequest, global::QuanLySvGRPC.Protos.ListSinhVienReply>(serviceImpl.ArrangeSinhVien));
+      serviceBinder.AddMethod(__Method_GetPageSinhVien, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::QuanLySvGRPC.Protos.PageSinhVienRequest, global::QuanLySvGRPC.Protos.PageSinhVienReply>(serviceImpl.GetPageSinhVien));
+      serviceBinder.AddMethod(__Method_GetAllLopHoc, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::QuanLySvGRPC.Protos.LopHocRequest, global::QuanLySvGRPC.Protos.ListLopHocReply>(serviceImpl.GetAllLopHoc));
+    }
+
+  }
+  public static partial class LopRPC
+  {
+    static readonly string __ServiceName = "sinhvien.LopRPC";
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::QuanLySvGRPC.Protos.LopHocRequest> __Marshaller_sinhvien_LopHocRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::QuanLySvGRPC.Protos.LopHocRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::QuanLySvGRPC.Protos.ListLopHocReply> __Marshaller_sinhvien_ListLopHocReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::QuanLySvGRPC.Protos.ListLopHocReply.Parser));
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::QuanLySvGRPC.Protos.LopHocRequest, global::QuanLySvGRPC.Protos.ListLopHocReply> __Method_GetAllLopHoc = new grpc::Method<global::QuanLySvGRPC.Protos.LopHocRequest, global::QuanLySvGRPC.Protos.ListLopHocReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetAllLopHoc",
+        __Marshaller_sinhvien_LopHocRequest,
+        __Marshaller_sinhvien_ListLopHocReply);
+
+    /// <summary>Service descriptor</summary>
+    public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
+    {
+      get { return global::QuanLySvGRPC.Protos.SinhvienReflection.Descriptor.Services[1]; }
+    }
+
+    /// <summary>Base class for server-side implementations of LopRPC</summary>
+    [grpc::BindServiceMethod(typeof(LopRPC), "BindService")]
+    public abstract partial class LopRPCBase
+    {
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::System.Threading.Tasks.Task<global::QuanLySvGRPC.Protos.ListLopHocReply> GetAllLopHoc(global::QuanLySvGRPC.Protos.LopHocRequest request, grpc::ServerCallContext context)
+      {
+        throw new grpc::RpcException(new grpc::Status(grpc::StatusCode.Unimplemented, ""));
+      }
+
+    }
+
+    /// <summary>Creates service definition that can be registered with a server</summary>
+    /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public static grpc::ServerServiceDefinition BindService(LopRPCBase serviceImpl)
+    {
+      return grpc::ServerServiceDefinition.CreateBuilder()
+          .AddMethod(__Method_GetAllLopHoc, serviceImpl.GetAllLopHoc).Build();
+    }
+
+    /// <summary>Register service method with a service binder with or without implementation. Useful when customizing the service binding logic.
+    /// Note: this method is part of an experimental API that can change or be removed without any prior notice.</summary>
+    /// <param name="serviceBinder">Service methods will be bound by calling <c>AddMethod</c> on this object.</param>
+    /// <param name="serviceImpl">An object implementing the server-side handling logic.</param>
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    public static void BindService(grpc::ServiceBinderBase serviceBinder, LopRPCBase serviceImpl)
+    {
       serviceBinder.AddMethod(__Method_GetAllLopHoc, serviceImpl == null ? null : new grpc::UnaryServerMethod<global::QuanLySvGRPC.Protos.LopHocRequest, global::QuanLySvGRPC.Protos.ListLopHocReply>(serviceImpl.GetAllLopHoc));
     }
 

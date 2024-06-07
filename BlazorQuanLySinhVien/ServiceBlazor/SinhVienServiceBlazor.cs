@@ -1,9 +1,10 @@
 ﻿using BlazorQuanLySinhVien.DTO;
 using BlazorQuanLySinhVien.ServiceBlazor.Interface;
+using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 using QuanLySvGRPC.Protos;
 
-namespace BlazorQuanLySinhVien.Service
+namespace BlazorQuanLySinhVien.ServiceBlazor
 {
     public class SinhVienServiceBlazor : ISinhVienServiceBlazor
     {
@@ -13,18 +14,18 @@ namespace BlazorQuanLySinhVien.Service
         {
             _sinhVienClient = sinhVienClient;
         }
-        public async Task<List<SinhVienDTO>> getAllSinhVienAsync(List<SinhVienDTO> listSinhVien)
-        {
-            var request = new SinhVienRequest { Id = 1 };
-            var response = await _sinhVienClient.GetAllSinhVienAsync(request);
-            int stt = 1;
-            listSinhVien = response.SvReply.Select(sv =>
-            {
-                var ngaySinh = new DateTime(sv.Ngaysinh.Year, sv.Ngaysinh.Month, sv.Ngaysinh.Day);
-                return new SinhVienDTO() { Stt = stt++, ID = sv.ID, Ten = sv.Ten, DiaChi = sv.DiaChi, NgaySinh = ngaySinh, TenLop = sv.LopHoc.TenLop, IdLopHoc = sv.LopHoc.ID };
-            }).ToList();
-            return listSinhVien;
-        }
+        //public async Task<List<SinhVienDTO>> getAllSinhVienAsync(List<SinhVienDTO> listSinhVien)
+        //{
+        //    var request = new SinhVienRequest { Id = 1 };
+        //    var response = await _sinhVienClient.GetAllSinhVienAsync(request);
+        //    int stt = 1;
+        //    listSinhVien = response.SvReply.Select(sv =>
+        //    {
+
+        //        return new SinhVienDTO() { Stt = stt++, ID = sv.ID, Ten = sv.Ten, DiaChi = sv.DiaChi, NgaySinh = sv.Ngaysinh.ToDateTime(), TenLop = sv.LopHoc.TenLop, IdLopHoc = sv.LopHoc.ID };
+        //    }).ToList();
+        //    return listSinhVien;
+        //}
         public async Task<bool> delSinhVienAsync(SinhVienDTO sinhVienDTO)
         {
             var request = new SinhVienRequest { Id = sinhVienDTO.ID };
@@ -46,7 +47,7 @@ namespace BlazorQuanLySinhVien.Service
                         Ten = response.Ten,
                         IdLopHoc = response.LopHoc.ID,
                         TenLop = response.LopHoc.TenLop,
-                        NgaySinh = new DateTime(response.Ngaysinh.Year, response.Ngaysinh.Month, response.Ngaysinh.Day),
+                        NgaySinh = response.Ngaysinh.ToDateTime(),
                         DiaChi = response.DiaChi
                     };
                 }
@@ -57,11 +58,11 @@ namespace BlazorQuanLySinhVien.Service
             }
             catch (RpcException ex)
             {
-                
+
                 Console.WriteLine($"Lỗi RPC: {ex.Status.Detail}");
                 return null;
             }
-            
+
 
         }
         public async Task<bool> addSinhVienAsync(SinhVienDTO sinhVienDTO)
@@ -70,12 +71,7 @@ namespace BlazorQuanLySinhVien.Service
             {
                 ID = sinhVienDTO.ID,
                 Ten = sinhVienDTO.Ten,
-                Ngaysinh = new Birthday
-                {
-                    Day = sinhVienDTO.NgaySinh.Day,
-                    Month = sinhVienDTO.NgaySinh.Month,
-                    Year = sinhVienDTO.NgaySinh.Year
-                },
+                Ngaysinh = sinhVienDTO.NgaySinh.ToUniversalTime().ToTimestamp(),
                 DiaChi = sinhVienDTO.DiaChi,
                 IdLopHoc = sinhVienDTO.IdLopHoc
             };
@@ -89,12 +85,7 @@ namespace BlazorQuanLySinhVien.Service
             {
                 ID = sinhVienDTO.ID,
                 Ten = sinhVienDTO.Ten,
-                Ngaysinh = new Birthday
-                {
-                    Day = sinhVienDTO.NgaySinh.Day,
-                    Month = sinhVienDTO.NgaySinh.Month,
-                    Year = sinhVienDTO.NgaySinh.Year
-                },
+                Ngaysinh = sinhVienDTO.NgaySinh.ToUniversalTime().ToTimestamp(),
                 DiaChi = sinhVienDTO.DiaChi,
                 IdLopHoc = sinhVienDTO.IdLopHoc
             };
@@ -102,6 +93,49 @@ namespace BlazorQuanLySinhVien.Service
             var response = await _sinhVienClient.UpdateSinhVienAsync(request);
             return response != null;
         }
-        //public List
+        public async Task<PageViewDTO<SinhVienDTO>> getPageSinhVien(int pageNumber, int pageSize, SinhVienSearchDTO svSearch = null)
+        {
+            if (svSearch == null)
+            {
+                svSearch = new SinhVienSearchDTO();
+            }
+
+            var request = new PageSinhVienRequest
+            {
+                PageNumber = pageNumber,
+                PageSize = pageSize,
+                SvSearch = new SinhVienSearchRequest()
+                {
+                    ID = svSearch.ID,
+                    Ten = svSearch.Ten ?? "",
+                    DiaChi = svSearch.DiaChi ?? "",
+                    NgayBatDau = svSearch.NgayBatDau?.ToUniversalTime().ToTimestamp(),
+                    NgayKetThuc = svSearch.NgayKetThuc?.ToUniversalTime().ToTimestamp(),
+                    IdLopHoc = svSearch.idLopHoc
+                }
+            };
+
+            var response = await _sinhVienClient.GetPageSinhVienAsync(request);
+
+            return new PageViewDTO<SinhVienDTO>
+            {
+                PageNumber = pageNumber,
+                PageSize = pageSize,
+                PageCount = response.PageCount,
+                Data = response.SvReply.Select(sv =>
+                {
+                    return new SinhVienDTO()
+                    {
+                        ID = sv.ID,
+                        Ten = sv.Ten,
+                        DiaChi = sv.DiaChi,
+                        NgaySinh = sv.Ngaysinh.ToDateTime(),
+                        TenLop = sv.LopHoc.TenLop,
+                        IdLopHoc = sv.LopHoc.ID
+                    };
+                }).ToList()
+            };
+        }
+
     }
 }

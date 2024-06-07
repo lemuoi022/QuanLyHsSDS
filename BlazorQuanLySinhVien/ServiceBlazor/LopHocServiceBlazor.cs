@@ -1,7 +1,7 @@
 ﻿using BlazorQuanLySinhVien.DTO;
 using BlazorQuanLySinhVien.ServiceBlazor.Interface;
 using QuanLySvGRPC.Protos;
-using QuanLySvGRPC.Services;
+//using QuanLySvGRPC.Services;
 
 namespace BlazorQuanLySinhVien.ServiceBlazor
 {

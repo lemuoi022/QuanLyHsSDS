@@ -1,4 +1,5 @@
-﻿using QuanLySvGRPC.Model.Domain;
+﻿using QuanLySvGRPC.Model;
+using QuanLySvGRPC.Model.Domain;
 
 namespace QuanLySvGRPC.Repository.Interface
 {
@@ -8,5 +9,6 @@ namespace QuanLySvGRPC.Repository.Interface
         public SinhVien insertOrUpadateSinhVien(SinhVien sv);
         public Boolean deleteSinhVien(SinhVien sv);
         public SinhVien getSinhVienById(int id);
+        Task<PageView<SinhVien>> getPageData(int pageNumber, int pageSize, SinhVienSearch sinhVienSearch);
     }
 }

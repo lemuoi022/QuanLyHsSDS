@@ -1,23 +1,11 @@
 {
   "Version": 1,
-  "Hash": "OhQo4DkhGrC2T/On0nKrcQerLCsEe0BQfZ4srogIVmQ=",
+  "Hash": "3Ye5dPNe36+W+olOV9QHzRlgkpcsHHKDrXclRyzARog=",
   "Source": "BlazorQuanLySinhVien",
   "BasePath": "_content/BlazorQuanLySinhVien",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [
-    {
-      "Identity": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\QuanLySvGRPC.csproj",
-      "Version": 2,
-      "Source": "QuanLySvGRPC",
-      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
-      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
-    }
-  ],
+  "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
       "Name": "BlazorQuanLySinhVien\\wwwroot",

@@ -56,6 +56,10 @@ namespace QuanLySvGRPC.Protos {
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::Google.Protobuf.WellKnownTypes.BoolValue> __Marshaller_google_protobuf_BoolValue = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::Google.Protobuf.WellKnownTypes.BoolValue.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::QuanLySvGRPC.Protos.PageSinhVienRequest> __Marshaller_sinhvien_PageSinhVienRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::QuanLySvGRPC.Protos.PageSinhVienRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::QuanLySvGRPC.Protos.PageSinhVienReply> __Marshaller_sinhvien_PageSinhVienReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::QuanLySvGRPC.Protos.PageSinhVienReply.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::QuanLySvGRPC.Protos.LopHocRequest> __Marshaller_sinhvien_LopHocRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::QuanLySvGRPC.Protos.LopHocRequest.Parser));
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Marshaller<global::QuanLySvGRPC.Protos.ListLopHocReply> __Marshaller_sinhvien_ListLopHocReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::QuanLySvGRPC.Protos.ListLopHocReply.Parser));
@@ -107,6 +111,14 @@ namespace QuanLySvGRPC.Protos {
         "ArrangeSinhVien",
         __Marshaller_sinhvien_SinhVienRequest,
         __Marshaller_sinhvien_ListSinhVienReply);
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::QuanLySvGRPC.Protos.PageSinhVienRequest, global::QuanLySvGRPC.Protos.PageSinhVienReply> __Method_GetPageSinhVien = new grpc::Method<global::QuanLySvGRPC.Protos.PageSinhVienRequest, global::QuanLySvGRPC.Protos.PageSinhVienReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetPageSinhVien",
+        __Marshaller_sinhvien_PageSinhVienRequest,
+        __Marshaller_sinhvien_PageSinhVienReply);
 
     [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
     static readonly grpc::Method<global::QuanLySvGRPC.Protos.LopHocRequest, global::QuanLySvGRPC.Protos.ListLopHocReply> __Method_GetAllLopHoc = new grpc::Method<global::QuanLySvGRPC.Protos.LopHocRequest, global::QuanLySvGRPC.Protos.ListLopHocReply>(
@@ -270,6 +282,26 @@ namespace QuanLySvGRPC.Protos {
         return CallInvoker.AsyncUnaryCall(__Method_ArrangeSinhVien, null, options, request);
       }
       [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::QuanLySvGRPC.Protos.PageSinhVienReply GetPageSinhVien(global::QuanLySvGRPC.Protos.PageSinhVienRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetPageSinhVien(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::QuanLySvGRPC.Protos.PageSinhVienReply GetPageSinhVien(global::QuanLySvGRPC.Protos.PageSinhVienRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetPageSinhVien, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::QuanLySvGRPC.Protos.PageSinhVienReply> GetPageSinhVienAsync(global::QuanLySvGRPC.Protos.PageSinhVienRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetPageSinhVienAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::QuanLySvGRPC.Protos.PageSinhVienReply> GetPageSinhVienAsync(global::QuanLySvGRPC.Protos.PageSinhVienRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetPageSinhVien, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
       public virtual global::QuanLySvGRPC.Protos.ListLopHocReply GetAllLopHoc(global::QuanLySvGRPC.Protos.LopHocRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
       {
         return GetAllLopHoc(request, new grpc::CallOptions(headers, deadline, cancellationToken));
@@ -294,6 +326,118 @@ namespace QuanLySvGRPC.Protos {
       protected override SinhVienRPCClient NewInstance(ClientBaseConfiguration configuration)
       {
         return new SinhVienRPCClient(configuration);
+      }
+    }
+
+  }
+  public static partial class LopRPC
+  {
+    static readonly string __ServiceName = "sinhvien.LopRPC";
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static void __Helper_SerializeMessage(global::Google.Protobuf.IMessage message, grpc::SerializationContext context)
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (message is global::Google.Protobuf.IBufferMessage)
+      {
+        context.SetPayloadLength(message.CalculateSize());
+        global::Google.Protobuf.MessageExtensions.WriteTo(message, context.GetBufferWriter());
+        context.Complete();
+        return;
+      }
+      #endif
+      context.Complete(global::Google.Protobuf.MessageExtensions.ToByteArray(message));
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static class __Helper_MessageCache<T>
+    {
+      public static readonly bool IsBufferMessage = global::System.Reflection.IntrospectionExtensions.GetTypeInfo(typeof(global::Google.Protobuf.IBufferMessage)).IsAssignableFrom(typeof(T));
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static T __Helper_DeserializeMessage<T>(grpc::DeserializationContext context, global::Google.Protobuf.MessageParser<T> parser) where T : global::Google.Protobuf.IMessage<T>
+    {
+      #if !GRPC_DISABLE_PROTOBUF_BUFFER_SERIALIZATION
+      if (__Helper_MessageCache<T>.IsBufferMessage)
+      {
+        return parser.ParseFrom(context.PayloadAsReadOnlySequence());
+      }
+      #endif
+      return parser.ParseFrom(context.PayloadAsNewBuffer());
+    }
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::QuanLySvGRPC.Protos.LopHocRequest> __Marshaller_sinhvien_LopHocRequest = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::QuanLySvGRPC.Protos.LopHocRequest.Parser));
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Marshaller<global::QuanLySvGRPC.Protos.ListLopHocReply> __Marshaller_sinhvien_ListLopHocReply = grpc::Marshallers.Create(__Helper_SerializeMessage, context => __Helper_DeserializeMessage(context, global::QuanLySvGRPC.Protos.ListLopHocReply.Parser));
+
+    [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+    static readonly grpc::Method<global::QuanLySvGRPC.Protos.LopHocRequest, global::QuanLySvGRPC.Protos.ListLopHocReply> __Method_GetAllLopHoc = new grpc::Method<global::QuanLySvGRPC.Protos.LopHocRequest, global::QuanLySvGRPC.Protos.ListLopHocReply>(
+        grpc::MethodType.Unary,
+        __ServiceName,
+        "GetAllLopHoc",
+        __Marshaller_sinhvien_LopHocRequest,
+        __Marshaller_sinhvien_ListLopHocReply);
+
+    /// <summary>Service descriptor</summary>
+    public static global::Google.Protobuf.Reflection.ServiceDescriptor Descriptor
+    {
+      get { return global::QuanLySvGRPC.Protos.SinhvienReflection.Descriptor.Services[1]; }
+    }
+
+    /// <summary>Client for LopRPC</summary>
+    public partial class LopRPCClient : grpc::ClientBase<LopRPCClient>
+    {
+      /// <summary>Creates a new client for LopRPC</summary>
+      /// <param name="channel">The channel to use to make remote calls.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public LopRPCClient(grpc::ChannelBase channel) : base(channel)
+      {
+      }
+      /// <summary>Creates a new client for LopRPC that uses a custom <c>CallInvoker</c>.</summary>
+      /// <param name="callInvoker">The callInvoker to use to make remote calls.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public LopRPCClient(grpc::CallInvoker callInvoker) : base(callInvoker)
+      {
+      }
+      /// <summary>Protected parameterless constructor to allow creation of test doubles.</summary>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      protected LopRPCClient() : base()
+      {
+      }
+      /// <summary>Protected constructor to allow creation of configured clients.</summary>
+      /// <param name="configuration">The client configuration.</param>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      protected LopRPCClient(ClientBaseConfiguration configuration) : base(configuration)
+      {
+      }
+
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::QuanLySvGRPC.Protos.ListLopHocReply GetAllLopHoc(global::QuanLySvGRPC.Protos.LopHocRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetAllLopHoc(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual global::QuanLySvGRPC.Protos.ListLopHocReply GetAllLopHoc(global::QuanLySvGRPC.Protos.LopHocRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.BlockingUnaryCall(__Method_GetAllLopHoc, null, options, request);
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::QuanLySvGRPC.Protos.ListLopHocReply> GetAllLopHocAsync(global::QuanLySvGRPC.Protos.LopHocRequest request, grpc::Metadata headers = null, global::System.DateTime? deadline = null, global::System.Threading.CancellationToken cancellationToken = default(global::System.Threading.CancellationToken))
+      {
+        return GetAllLopHocAsync(request, new grpc::CallOptions(headers, deadline, cancellationToken));
+      }
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      public virtual grpc::AsyncUnaryCall<global::QuanLySvGRPC.Protos.ListLopHocReply> GetAllLopHocAsync(global::QuanLySvGRPC.Protos.LopHocRequest request, grpc::CallOptions options)
+      {
+        return CallInvoker.AsyncUnaryCall(__Method_GetAllLopHoc, null, options, request);
+      }
+      /// <summary>Creates a new instance of client from given <c>ClientBaseConfiguration</c>.</summary>
+      [global::System.CodeDom.Compiler.GeneratedCode("grpc_csharp_plugin", null)]
+      protected override LopRPCClient NewInstance(ClientBaseConfiguration configuration)
+      {
+        return new LopRPCClient(configuration);
       }
     }
 

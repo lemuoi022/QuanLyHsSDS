@@ -3,10 +3,9 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using QuanLySvGRPC;
 using QuanLySvGRPC.Protos;
-using QuanLySvGRPC.Services;
+//using QuanLySvGRPC.Services;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
-using BlazorQuanLySinhVien.Service;
 using BlazorQuanLySinhVien.ServiceBlazor.Interface;
 using BlazorQuanLySinhVien.ServiceBlazor;
 
@@ -26,6 +25,7 @@ namespace BlazorQuanLySinhVien
             builder.Services.AddSingleton<WeatherForecastService>();
             builder.Services.AddScoped<ISinhVienServiceBlazor,SinhVienServiceBlazor>();
             builder.Services.AddScoped<ILopHocServiceBlazor, LopHocServiceBlazor>();
+            builder.Services.AddSingleton<IExcelServiceBlazor, ExcelServiceBlazor>();
             builder.Services.AddGrpcClient<SinhVienRPC.SinhVienRPCClient>(options =>
             {
                 options.Address = new Uri("http://localhost:5015");

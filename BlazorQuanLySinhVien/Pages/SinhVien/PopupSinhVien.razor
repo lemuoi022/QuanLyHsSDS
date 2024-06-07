@@ -1,5 +1,5 @@
 ﻿@using AntDesign;
-@using BlazorQuanLySinhVien.Service;
+@using BlazorQuanLySinhVien.Shared;
 @using BlazorQuanLySinhVien.ServiceBlazor.Interface;
 @using QuanLySvGRPC.Protos
 @inject IMessageService _message
@@ -47,7 +47,7 @@
 
                     <label class="form-label" for="class">Lớp học</label>
 
-                    <InputSelect @bind-Value="@sinhVienDTO.IdLopHoc" class="form-select" >
+                    <InputSelect va @bind-Value="@sinhVienDTO.IdLopHoc" class="form-select" >
                         @foreach (var lh in listLopHoc)
                         {
                             <option value="@lh.ID">@lh.TenLop</option>

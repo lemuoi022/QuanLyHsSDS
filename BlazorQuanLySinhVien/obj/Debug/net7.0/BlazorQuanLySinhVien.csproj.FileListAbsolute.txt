@@ -61,13 +61,10 @@ D:\daotaoSDS\BlazorQuanLySinhVien\bin\Debug\net7.0\runtimes\win\lib\net6.0\Syste
 D:\daotaoSDS\BlazorQuanLySinhVien\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\daotaoSDS\BlazorQuanLySinhVien\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 D:\daotaoSDS\BlazorQuanLySinhVien\obj\Debug\net7.0\BlazorQuanLySinhVien.csproj.CopyComplete
-D:\daotaoSDS\BlazorQuanLySinhVien\bin\Debug\net7.0\QuanLySvGRPC.deps.json
-D:\daotaoSDS\BlazorQuanLySinhVien\bin\Debug\net7.0\QuanLySvGRPC.runtimeconfig.json
-D:\daotaoSDS\BlazorQuanLySinhVien\bin\Debug\net7.0\QuanLySvGRPC.staticwebassets.runtime.json
-D:\daotaoSDS\BlazorQuanLySinhVien\bin\Debug\net7.0\QuanLySvGRPC.exe
 D:\daotaoSDS\BlazorQuanLySinhVien\bin\Debug\net7.0\AntDesign.dll
 D:\daotaoSDS\BlazorQuanLySinhVien\bin\Debug\net7.0\Microsoft.AspNetCore.Components.DataAnnotations.Validation.dll
 D:\daotaoSDS\BlazorQuanLySinhVien\bin\Debug\net7.0\OneOf.dll
-D:\daotaoSDS\BlazorQuanLySinhVien\bin\Debug\net7.0\QuanLySvGRPC.dll
-D:\daotaoSDS\BlazorQuanLySinhVien\bin\Debug\net7.0\QuanLySvGRPC.pdb
 D:\daotaoSDS\BlazorQuanLySinhVien\obj\Debug\net7.0\jsmodules\jsmodules.build.manifest.json
+D:\daotaoSDS\BlazorQuanLySinhVien\bin\Debug\net7.0\Syncfusion.Compression.Portable.dll
+D:\daotaoSDS\BlazorQuanLySinhVien\bin\Debug\net7.0\Syncfusion.Licensing.dll
+D:\daotaoSDS\BlazorQuanLySinhVien\bin\Debug\net7.0\Syncfusion.XlsIO.Portable.dll

@@ -1,31 +1,54 @@
 ﻿using AntDesign;
+using AntDesign.TableModels;
 using BlazorQuanLySinhVien.DTO;
-using BlazorQuanLySinhVien.Service;
+using BlazorQuanLySinhVien.Shared;
+using BlazorQuanLySinhVien.Utils;
 using Microsoft.AspNetCore.Components;
+using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Components.Web;
 using NHibernate.Util;
 using QuanLySvGRPC.Protos;
+using System.Drawing.Printing;
+
+
 
 namespace BlazorQuanLySinhVien.Pages.SinhVien
 {
     public partial class DanhSachSinhVien
     {
-
+       
         public List<SinhVienDTO> listSinhVien = new List<SinhVienDTO>();
         PopupSinhVien popupSinhVien;
-        
+        protected SinhVienSearchDTO svSearch = new SinhVienSearchDTO() { };
+        public List<LopHocDTO> listLH = new List<LopHocDTO>();
+        //private EditForm formSearch;
         public bool isCreate { get; set; }= true;
-        private string txtValue { get; set; } 
-        private bool loading;
+        public int total; 
+        private int pageNumber = 1;
+        private int pageSize = 5;
+        private Table<SinhVienDTO> tableSV;
         protected override async Task OnInitializedAsync()
         {
-            await loadData();
-            
+            await loadPageSinhVienAsync();
+            await loadLopHocAsync();
+           
         }
-        private async Task loadData()
+        private async Task loadLopHocAsync()
         {
-            
-            listSinhVien = await _sinhVienService.getAllSinhVienAsync(listSinhVien);
+            listLH = await _lopHocService.getAllLopHocAsync();
+        }
+        private async Task loadPageSinhVienAsync()
+        {
+           
+            var page = await _sinhVienService.getPageSinhVien(pageNumber, pageSize, svSearch);
+            listSinhVien = page.Data;
+            total = page.PageCount*page.PageSize;
+            StateHasChanged();
+        }
+        private async Task ResetSearch()
+        {
+            svSearch.ID = 0; 
+            await loadPageSinhVienAsync();
             StateHasChanged();
         }
         private async void DetailUpdateSinhVien(SinhVienDTO sinhVienDTO)
@@ -37,36 +60,36 @@ namespace BlazorQuanLySinhVien.Pages.SinhVien
         }
         private async void HandleAddSinhVien()
         {
-            await loadData();
-            StateHasChanged();
-        }
-        private async void DeleteSinhVien(SinhVienDTO sinhVienDTO)
-        {
-            var del = await _sinhVienService.delSinhVienAsync(sinhVienDTO);
-            loadData();
-        }
-        
-        public async Task searchSinhVienAsync()
-        {
-            await _message.Loading($"searching {txtValue}", 2);
-            if (txtValue!=null)
-            {
-                SinhVienDTO sinhVienDTO = new SinhVienDTO() { ID = int.Parse(txtValue) };
-                var search = await _sinhVienService.getSinhVienByIdAsync(sinhVienDTO);
-                if (search != null)
-                {
-                    listSinhVien.Clear();
-                    listSinhVien.Add(search);
-                }
-                else
-                {
-                    loadData();
-                }
-            }
-           else { loadData(); }
+            await loadPageSinhVienAsync();
             
         }
+       
+        private async Task DeleteSinhVien(SinhVienDTO sinhVienDTO)
+        {
+            var del = await _sinhVienService.delSinhVienAsync(sinhVienDTO);
+            if (del)
+            {
+                loadPageSinhVienAsync();
+      
+            }
+            
+        }
+        private async Task HandleTableChange(QueryModel<SinhVienDTO> queryModel)
+        {
+            pageNumber = queryModel.PageIndex;
+            pageSize = queryModel.PageSize;
+            await loadPageSinhVienAsync();
+        }
 
+        async void OnFinishSearchAsync(EditContext editContext)
+        {
+            pageNumber = 1;
+            await loadPageSinhVienAsync();
+        }
+         void OnFinishFailedSearch(EditContext editContext)
+        {
+            svSearch = new SinhVienSearchDTO();
+        }
         public void Clear()
         {
             popupSinhVien.sinhVienDTO = new SinhVienDTO()
@@ -76,5 +99,27 @@ namespace BlazorQuanLySinhVien.Pages.SinhVien
             popupSinhVien.IsCreate = true;
             isCreate = true;
         }
+        public void ClearSearch()
+        {
+            SinhVienSearchDTO svSearch = new SinhVienSearchDTO()
+            {
+   
+            };
+        }
+        MemoryStream excelStream;
+
+        /// <summary>
+        /// Create and download the Excel document.
+        /// </summary>
+        protected async void CreateDocument()
+        {
+            await loadPageSinhVienAsync();
+            excelStream = _excelService.CreateExcel(listSinhVien);
+            await JS.SaveAs("SinhVien.xlsx", excelStream.ToArray());
+        }
+        //void OnChange()
+        //{
+        //    pageNumber++;
+        //}
     }
 }

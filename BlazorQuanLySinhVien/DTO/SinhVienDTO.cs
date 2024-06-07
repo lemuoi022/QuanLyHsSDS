@@ -2,7 +2,7 @@
 {
     public class SinhVienDTO
     {
-        public int Stt { get; set; }
+        //public int Stt { get; set; }
         public int ID { get; set; }
         public string Ten { get; set; }
         public DateTime NgaySinh { get; set; }

@@ -21,11 +21,8 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="NHibernate" Version="5.5.1" />
+    <PackageReference Include="Syncfusion.XlsIO.Net.Core" Version="25.2.7" />
     <PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
 </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\gRPCSinhVien\QuanLySvGRPC\QuanLySvGRPC.csproj" />
-  </ItemGroup>
 
 </Project>

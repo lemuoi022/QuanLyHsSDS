@@ -3,14 +3,14 @@ using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.VisualBasic;
 using QuanLySvGRPC.Protos;
-using QuanLySvGRPC.Services;
+//using QuanLySvGRPC.Services;
 
 namespace BlazorQuanLySinhVien.Pages.SinhVien
 {
     partial class PopupSinhVien
     {
 
-        public SinhVienDTO? sinhVienDTO = new SinhVienDTO()
+        public SinhVienDTO sinhVienDTO = new SinhVienDTO()
         {
             NgaySinh = DateTime.Now
         };
@@ -22,16 +22,19 @@ namespace BlazorQuanLySinhVien.Pages.SinhVien
     
         [Parameter]
         public EventCallback OnAddSinhVien { get; set; }
+      
+       
         public EditForm editForm { get; set; }
         [Parameter]
         public bool IsCreate { get; set; }
 
-        protected override void OnInitialized()
+        protected override async Task OnInitializedAsync()
         {
-            loadLopHoc();
-            
-         
-            base.MemberwiseClone();
+            await loadLopHocAsync();
+        }
+        private async Task loadLopHocAsync()
+        {
+            listLopHoc = await _lopHocService.getAllLopHocAsync();
         }
         async Task SubmitAsync()
         {
@@ -40,6 +43,10 @@ namespace BlazorQuanLySinhVien.Pages.SinhVien
                 bool success;
                 if (IsCreate)
                 {
+                    if(sinhVienDTO.IdLopHoc == 0 || sinhVienDTO.IdLopHoc.Equals(0))
+                    {
+                        sinhVienDTO.IdLopHoc = 1;
+                    }
                     success = await _sinhVienService.addSinhVienAsync(sinhVienDTO); 
                 }
                 else
@@ -62,7 +69,7 @@ namespace BlazorQuanLySinhVien.Pages.SinhVien
         public void open()
         {
             title = (IsCreate) ? "Thêm sinh viên" : "Sửa sinh viên";
-            loadLopHoc();
+            
             this.visible = true;
         }
 
@@ -70,10 +77,6 @@ namespace BlazorQuanLySinhVien.Pages.SinhVien
         {
             Clear?.Invoke();
             this.visible = false;
-        }
-        private async Task loadLopHoc()
-        {
-           listLopHoc = await _lopHocService.getAllLopHocAsync();
         }
         private void Error()
         {

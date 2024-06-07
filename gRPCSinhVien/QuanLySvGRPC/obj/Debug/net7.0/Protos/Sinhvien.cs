@@ -25,43 +25,58 @@ namespace QuanLySvGRPC.Protos {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChVQcm90b3Mvc2luaHZpZW4ucHJvdG8SCHNpbmh2aWVuGh5nb29nbGUvcHJv",
-            "dG9idWYvd3JhcHBlcnMucHJvdG8iHQoPU2luaFZpZW5SZXF1ZXN0EgoKAmlk",
-            "GAEgASgFIhsKDUxvcEhvY1JlcXVlc3QSCgoCaWQYASABKAUidwoUU2luaFZp",
-            "ZW5Nb2RlbFJlcXVlc3QSCgoCSUQYASABKAUSCwoDVGVuGAIgASgJEiQKCG5n",
-            "YXlzaW5oGAMgASgLMhIuc2luaHZpZW4uQmlydGhkYXkSDgoGRGlhQ2hpGAQg",
-            "ASgJEhAKCElkTG9wSG9jGAUgASgFIjIKD0xpc3RMb3BIb2NSZXBseRIfCgdM",
-            "aFJlcGx5GAEgAygLMg4uc2luaHZpZW4uTEhvYyI9ChFMaXN0U2luaFZpZW5S",
-            "ZXBseRIoCgdTdlJlcGx5GAEgAygLMhcuc2luaHZpZW4uU2luaFZpZW5SZXBs",
-            "eSJ+Cg1TaW5oVmllblJlcGx5EgoKAklEGAEgASgFEgsKA1RlbhgCIAEoCRIk",
-            "CghuZ2F5c2luaBgDIAEoCzISLnNpbmh2aWVuLkJpcnRoZGF5Eg4KBkRpYUNo",
-            "aRgEIAEoCRIeCgZMb3BIb2MYBSABKAsyDi5zaW5odmllbi5MSG9jIjQKCEJp",
-            "cnRoZGF5EgwKBHllYXIYASABKAUSDQoFbW9udGgYAiABKAUSCwoDZGF5GAMg",
-            "ASgFIlIKBExIb2MSCgoCSUQYASABKAUSDgoGVGVuTG9wGAIgASgJEg4KBk1v",
-            "bkhvYxgDIAEoCRIeCgVHdmllbhgEIAEoCzIPLnNpbmh2aWVuLkdWaWVuIkYK",
-            "BUdWaWVuEgoKAklEGAEgASgFEgsKA1RlbhgCIAEoCRIkCghuZ2F5c2luaBgD",
-            "IAEoCzISLnNpbmh2aWVuLkJpcnRoZGF5MosECgtTaW5oVmllblJQQxJHChFH",
-            "ZXRTaW5oVmllbkRldGFpbBIZLnNpbmh2aWVuLlNpbmhWaWVuUmVxdWVzdBoX",
-            "LnNpbmh2aWVuLlNpbmhWaWVuUmVwbHkSSAoOR2V0QWxsU2luaFZpZW4SGS5z",
-            "aW5odmllbi5TaW5oVmllblJlcXVlc3QaGy5zaW5odmllbi5MaXN0U2luaFZp",
-            "ZW5SZXBseRJJCg5VcGRhdGVTaW5oVmllbhIeLnNpbmh2aWVuLlNpbmhWaWVu",
-            "TW9kZWxSZXF1ZXN0Ghcuc2luaHZpZW4uU2luaFZpZW5SZXBseRJHCg5EZWxl",
-            "dGVTaW5oVmllbhIZLnNpbmh2aWVuLlNpbmhWaWVuUmVxdWVzdBoaLmdvb2ds",
-            "ZS5wcm90b2J1Zi5Cb29sVmFsdWUSRgoLQWRkU2luaFZpZW4SHi5zaW5odmll",
-            "bi5TaW5oVmllbk1vZGVsUmVxdWVzdBoXLnNpbmh2aWVuLlNpbmhWaWVuUmVw",
-            "bHkSSQoPQXJyYW5nZVNpbmhWaWVuEhkuc2luaHZpZW4uU2luaFZpZW5SZXF1",
-            "ZXN0Ghsuc2luaHZpZW4uTGlzdFNpbmhWaWVuUmVwbHkSQgoMR2V0QWxsTG9w",
-            "SG9jEhcuc2luaHZpZW4uTG9wSG9jUmVxdWVzdBoZLnNpbmh2aWVuLkxpc3RM",
-            "b3BIb2NSZXBseUIWqgITUXVhbkx5U3ZHUlBDLlByb3Rvc2IGcHJvdG8z"));
+            "dG9idWYvd3JhcHBlcnMucHJvdG8aH2dvb2dsZS9wcm90b2J1Zi90aW1lc3Rh",
+            "bXAucHJvdG8idgoRUGFnZVNpbmhWaWVuUmVwbHkSKAoHU3ZSZXBseRgBIAMo",
+            "CzIXLnNpbmh2aWVuLlNpbmhWaWVuUmVwbHkSEQoJcGFnZUNvdW50GAIgASgF",
+            "EhAKCHBhZ2VTaXplGAMgASgFEhIKCnBhZ2VOdW1iZXIYBCABKAUibgoTUGFn",
+            "ZVNpbmhWaWVuUmVxdWVzdBIQCghwYWdlU2l6ZRgBIAEoBRISCgpwYWdlTnVt",
+            "YmVyGAIgASgFEjEKCFN2U2VhcmNoGAMgASgLMh8uc2luaHZpZW4uU2luaFZp",
+            "ZW5TZWFyY2hSZXF1ZXN0IrMBChVTaW5oVmllblNlYXJjaFJlcXVlc3QSCgoC",
+            "SUQYASABKAUSCwoDVGVuGAIgASgJEi4KCm5nYXlCYXREYXUYAyABKAsyGi5n",
+            "b29nbGUucHJvdG9idWYuVGltZXN0YW1wEi8KC25nYXlLZXRUaHVjGAQgASgL",
+            "MhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIOCgZEaWFDaGkYBSABKAkS",
+            "EAoISWRMb3BIb2MYBiABKAUiHQoPU2luaFZpZW5SZXF1ZXN0EgoKAmlkGAEg",
+            "ASgFIhsKDUxvcEhvY1JlcXVlc3QSCgoCaWQYASABKAUifwoUU2luaFZpZW5N",
+            "b2RlbFJlcXVlc3QSCgoCSUQYASABKAUSCwoDVGVuGAIgASgJEiwKCG5nYXlz",
+            "aW5oGAMgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcBIOCgZEaWFD",
+            "aGkYBCABKAkSEAoISWRMb3BIb2MYBSABKAUiMgoPTGlzdExvcEhvY1JlcGx5",
+            "Eh8KB0xoUmVwbHkYASADKAsyDi5zaW5odmllbi5MSG9jIj0KEUxpc3RTaW5o",
+            "VmllblJlcGx5EigKB1N2UmVwbHkYASADKAsyFy5zaW5odmllbi5TaW5oVmll",
+            "blJlcGx5IoYBCg1TaW5oVmllblJlcGx5EgoKAklEGAEgASgFEgsKA1RlbhgC",
+            "IAEoCRIsCghuZ2F5c2luaBgDIAEoCzIaLmdvb2dsZS5wcm90b2J1Zi5UaW1l",
+            "c3RhbXASDgoGRGlhQ2hpGAQgASgJEh4KBkxvcEhvYxgFIAEoCzIOLnNpbmh2",
+            "aWVuLkxIb2MiUgoETEhvYxIKCgJJRBgBIAEoBRIOCgZUZW5Mb3AYAiABKAkS",
+            "DgoGTW9uSG9jGAMgASgJEh4KBUd2aWVuGAQgASgLMg8uc2luaHZpZW4uR1Zp",
+            "ZW4iTgoFR1ZpZW4SCgoCSUQYASABKAUSCwoDVGVuGAIgASgJEiwKCG5nYXlz",
+            "aW5oGAMgASgLMhouZ29vZ2xlLnByb3RvYnVmLlRpbWVzdGFtcDLaBAoLU2lu",
+            "aFZpZW5SUEMSRwoRR2V0U2luaFZpZW5EZXRhaWwSGS5zaW5odmllbi5TaW5o",
+            "VmllblJlcXVlc3QaFy5zaW5odmllbi5TaW5oVmllblJlcGx5EkgKDkdldEFs",
+            "bFNpbmhWaWVuEhkuc2luaHZpZW4uU2luaFZpZW5SZXF1ZXN0Ghsuc2luaHZp",
+            "ZW4uTGlzdFNpbmhWaWVuUmVwbHkSSQoOVXBkYXRlU2luaFZpZW4SHi5zaW5o",
+            "dmllbi5TaW5oVmllbk1vZGVsUmVxdWVzdBoXLnNpbmh2aWVuLlNpbmhWaWVu",
+            "UmVwbHkSRwoORGVsZXRlU2luaFZpZW4SGS5zaW5odmllbi5TaW5oVmllblJl",
+            "cXVlc3QaGi5nb29nbGUucHJvdG9idWYuQm9vbFZhbHVlEkYKC0FkZFNpbmhW",
+            "aWVuEh4uc2luaHZpZW4uU2luaFZpZW5Nb2RlbFJlcXVlc3QaFy5zaW5odmll",
+            "bi5TaW5oVmllblJlcGx5EkkKD0FycmFuZ2VTaW5oVmllbhIZLnNpbmh2aWVu",
+            "LlNpbmhWaWVuUmVxdWVzdBobLnNpbmh2aWVuLkxpc3RTaW5oVmllblJlcGx5",
+            "Ek0KD0dldFBhZ2VTaW5oVmllbhIdLnNpbmh2aWVuLlBhZ2VTaW5oVmllblJl",
+            "cXVlc3QaGy5zaW5odmllbi5QYWdlU2luaFZpZW5SZXBseRJCCgxHZXRBbGxM",
+            "b3BIb2MSFy5zaW5odmllbi5Mb3BIb2NSZXF1ZXN0Ghkuc2luaHZpZW4uTGlz",
+            "dExvcEhvY1JlcGx5MkwKBkxvcFJQQxJCCgxHZXRBbGxMb3BIb2MSFy5zaW5o",
+            "dmllbi5Mb3BIb2NSZXF1ZXN0Ghkuc2luaHZpZW4uTGlzdExvcEhvY1JlcGx5",
+            "QhaqAhNRdWFuTHlTdkdSUEMuUHJvdG9zYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Protobuf.WellKnownTypes.WrappersReflection.Descriptor, global::Google.Protobuf.WellKnownTypes.TimestampReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+            new pbr::GeneratedClrTypeInfo(typeof(global::QuanLySvGRPC.Protos.PageSinhVienReply), global::QuanLySvGRPC.Protos.PageSinhVienReply.Parser, new[]{ "SvReply", "PageCount", "PageSize", "PageNumber" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::QuanLySvGRPC.Protos.PageSinhVienRequest), global::QuanLySvGRPC.Protos.PageSinhVienRequest.Parser, new[]{ "PageSize", "PageNumber", "SvSearch" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::QuanLySvGRPC.Protos.SinhVienSearchRequest), global::QuanLySvGRPC.Protos.SinhVienSearchRequest.Parser, new[]{ "ID", "Ten", "NgayBatDau", "NgayKetThuc", "DiaChi", "IdLopHoc" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::QuanLySvGRPC.Protos.SinhVienRequest), global::QuanLySvGRPC.Protos.SinhVienRequest.Parser, new[]{ "Id" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::QuanLySvGRPC.Protos.LopHocRequest), global::QuanLySvGRPC.Protos.LopHocRequest.Parser, new[]{ "Id" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::QuanLySvGRPC.Protos.SinhVienModelRequest), global::QuanLySvGRPC.Protos.SinhVienModelRequest.Parser, new[]{ "ID", "Ten", "Ngaysinh", "DiaChi", "IdLopHoc" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::QuanLySvGRPC.Protos.ListLopHocReply), global::QuanLySvGRPC.Protos.ListLopHocReply.Parser, new[]{ "LhReply" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::QuanLySvGRPC.Protos.ListSinhVienReply), global::QuanLySvGRPC.Protos.ListSinhVienReply.Parser, new[]{ "SvReply" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::QuanLySvGRPC.Protos.SinhVienReply), global::QuanLySvGRPC.Protos.SinhVienReply.Parser, new[]{ "ID", "Ten", "Ngaysinh", "DiaChi", "LopHoc" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::QuanLySvGRPC.Protos.Birthday), global::QuanLySvGRPC.Protos.Birthday.Parser, new[]{ "Year", "Month", "Day" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::QuanLySvGRPC.Protos.LHoc), global::QuanLySvGRPC.Protos.LHoc.Parser, new[]{ "ID", "TenLop", "MonHoc", "Gvien" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::QuanLySvGRPC.Protos.GVien), global::QuanLySvGRPC.Protos.GVien.Parser, new[]{ "ID", "Ten", "Ngaysinh" }, null, null, null, null)
           }));
@@ -70,6 +85,962 @@ namespace QuanLySvGRPC.Protos {
 
   }
   #region Messages
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class PageSinhVienReply : pb::IMessage<PageSinhVienReply>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<PageSinhVienReply> _parser = new pb::MessageParser<PageSinhVienReply>(() => new PageSinhVienReply());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<PageSinhVienReply> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::QuanLySvGRPC.Protos.SinhvienReflection.Descriptor.MessageTypes[0]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PageSinhVienReply() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PageSinhVienReply(PageSinhVienReply other) : this() {
+      svReply_ = other.svReply_.Clone();
+      pageCount_ = other.pageCount_;
+      pageSize_ = other.pageSize_;
+      pageNumber_ = other.pageNumber_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PageSinhVienReply Clone() {
+      return new PageSinhVienReply(this);
+    }
+
+    /// <summary>Field number for the "SvReply" field.</summary>
+    public const int SvReplyFieldNumber = 1;
+    private static readonly pb::FieldCodec<global::QuanLySvGRPC.Protos.SinhVienReply> _repeated_svReply_codec
+        = pb::FieldCodec.ForMessage(10, global::QuanLySvGRPC.Protos.SinhVienReply.Parser);
+    private readonly pbc::RepeatedField<global::QuanLySvGRPC.Protos.SinhVienReply> svReply_ = new pbc::RepeatedField<global::QuanLySvGRPC.Protos.SinhVienReply>();
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public pbc::RepeatedField<global::QuanLySvGRPC.Protos.SinhVienReply> SvReply {
+      get { return svReply_; }
+    }
+
+    /// <summary>Field number for the "pageCount" field.</summary>
+    public const int PageCountFieldNumber = 2;
+    private int pageCount_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int PageCount {
+      get { return pageCount_; }
+      set {
+        pageCount_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "pageSize" field.</summary>
+    public const int PageSizeFieldNumber = 3;
+    private int pageSize_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int PageSize {
+      get { return pageSize_; }
+      set {
+        pageSize_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "pageNumber" field.</summary>
+    public const int PageNumberFieldNumber = 4;
+    private int pageNumber_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int PageNumber {
+      get { return pageNumber_; }
+      set {
+        pageNumber_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as PageSinhVienReply);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(PageSinhVienReply other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if(!svReply_.Equals(other.svReply_)) return false;
+      if (PageCount != other.PageCount) return false;
+      if (PageSize != other.PageSize) return false;
+      if (PageNumber != other.PageNumber) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      hash ^= svReply_.GetHashCode();
+      if (PageCount != 0) hash ^= PageCount.GetHashCode();
+      if (PageSize != 0) hash ^= PageSize.GetHashCode();
+      if (PageNumber != 0) hash ^= PageNumber.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      svReply_.WriteTo(output, _repeated_svReply_codec);
+      if (PageCount != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(PageCount);
+      }
+      if (PageSize != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(PageSize);
+      }
+      if (PageNumber != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(PageNumber);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      svReply_.WriteTo(ref output, _repeated_svReply_codec);
+      if (PageCount != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(PageCount);
+      }
+      if (PageSize != 0) {
+        output.WriteRawTag(24);
+        output.WriteInt32(PageSize);
+      }
+      if (PageNumber != 0) {
+        output.WriteRawTag(32);
+        output.WriteInt32(PageNumber);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      size += svReply_.CalculateSize(_repeated_svReply_codec);
+      if (PageCount != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PageCount);
+      }
+      if (PageSize != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PageSize);
+      }
+      if (PageNumber != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PageNumber);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(PageSinhVienReply other) {
+      if (other == null) {
+        return;
+      }
+      svReply_.Add(other.svReply_);
+      if (other.PageCount != 0) {
+        PageCount = other.PageCount;
+      }
+      if (other.PageSize != 0) {
+        PageSize = other.PageSize;
+      }
+      if (other.PageNumber != 0) {
+        PageNumber = other.PageNumber;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 10: {
+            svReply_.AddEntriesFrom(input, _repeated_svReply_codec);
+            break;
+          }
+          case 16: {
+            PageCount = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            PageSize = input.ReadInt32();
+            break;
+          }
+          case 32: {
+            PageNumber = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 10: {
+            svReply_.AddEntriesFrom(ref input, _repeated_svReply_codec);
+            break;
+          }
+          case 16: {
+            PageCount = input.ReadInt32();
+            break;
+          }
+          case 24: {
+            PageSize = input.ReadInt32();
+            break;
+          }
+          case 32: {
+            PageNumber = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class PageSinhVienRequest : pb::IMessage<PageSinhVienRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<PageSinhVienRequest> _parser = new pb::MessageParser<PageSinhVienRequest>(() => new PageSinhVienRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<PageSinhVienRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::QuanLySvGRPC.Protos.SinhvienReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PageSinhVienRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PageSinhVienRequest(PageSinhVienRequest other) : this() {
+      pageSize_ = other.pageSize_;
+      pageNumber_ = other.pageNumber_;
+      svSearch_ = other.svSearch_ != null ? other.svSearch_.Clone() : null;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public PageSinhVienRequest Clone() {
+      return new PageSinhVienRequest(this);
+    }
+
+    /// <summary>Field number for the "pageSize" field.</summary>
+    public const int PageSizeFieldNumber = 1;
+    private int pageSize_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int PageSize {
+      get { return pageSize_; }
+      set {
+        pageSize_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "pageNumber" field.</summary>
+    public const int PageNumberFieldNumber = 2;
+    private int pageNumber_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int PageNumber {
+      get { return pageNumber_; }
+      set {
+        pageNumber_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "SvSearch" field.</summary>
+    public const int SvSearchFieldNumber = 3;
+    private global::QuanLySvGRPC.Protos.SinhVienSearchRequest svSearch_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::QuanLySvGRPC.Protos.SinhVienSearchRequest SvSearch {
+      get { return svSearch_; }
+      set {
+        svSearch_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as PageSinhVienRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(PageSinhVienRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (PageSize != other.PageSize) return false;
+      if (PageNumber != other.PageNumber) return false;
+      if (!object.Equals(SvSearch, other.SvSearch)) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (PageSize != 0) hash ^= PageSize.GetHashCode();
+      if (PageNumber != 0) hash ^= PageNumber.GetHashCode();
+      if (svSearch_ != null) hash ^= SvSearch.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (PageSize != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(PageSize);
+      }
+      if (PageNumber != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(PageNumber);
+      }
+      if (svSearch_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(SvSearch);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (PageSize != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(PageSize);
+      }
+      if (PageNumber != 0) {
+        output.WriteRawTag(16);
+        output.WriteInt32(PageNumber);
+      }
+      if (svSearch_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(SvSearch);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (PageSize != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PageSize);
+      }
+      if (PageNumber != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(PageNumber);
+      }
+      if (svSearch_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(SvSearch);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(PageSinhVienRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.PageSize != 0) {
+        PageSize = other.PageSize;
+      }
+      if (other.PageNumber != 0) {
+        PageNumber = other.PageNumber;
+      }
+      if (other.svSearch_ != null) {
+        if (svSearch_ == null) {
+          SvSearch = new global::QuanLySvGRPC.Protos.SinhVienSearchRequest();
+        }
+        SvSearch.MergeFrom(other.SvSearch);
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            PageSize = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            PageNumber = input.ReadInt32();
+            break;
+          }
+          case 26: {
+            if (svSearch_ == null) {
+              SvSearch = new global::QuanLySvGRPC.Protos.SinhVienSearchRequest();
+            }
+            input.ReadMessage(SvSearch);
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            PageSize = input.ReadInt32();
+            break;
+          }
+          case 16: {
+            PageNumber = input.ReadInt32();
+            break;
+          }
+          case 26: {
+            if (svSearch_ == null) {
+              SvSearch = new global::QuanLySvGRPC.Protos.SinhVienSearchRequest();
+            }
+            input.ReadMessage(SvSearch);
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
+  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
+  public sealed partial class SinhVienSearchRequest : pb::IMessage<SinhVienSearchRequest>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<SinhVienSearchRequest> _parser = new pb::MessageParser<SinhVienSearchRequest>(() => new SinhVienSearchRequest());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<SinhVienSearchRequest> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::QuanLySvGRPC.Protos.SinhvienReflection.Descriptor.MessageTypes[2]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SinhVienSearchRequest() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SinhVienSearchRequest(SinhVienSearchRequest other) : this() {
+      iD_ = other.iD_;
+      ten_ = other.ten_;
+      ngayBatDau_ = other.ngayBatDau_ != null ? other.ngayBatDau_.Clone() : null;
+      ngayKetThuc_ = other.ngayKetThuc_ != null ? other.ngayKetThuc_.Clone() : null;
+      diaChi_ = other.diaChi_;
+      idLopHoc_ = other.idLopHoc_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public SinhVienSearchRequest Clone() {
+      return new SinhVienSearchRequest(this);
+    }
+
+    /// <summary>Field number for the "ID" field.</summary>
+    public const int IDFieldNumber = 1;
+    private int iD_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int ID {
+      get { return iD_; }
+      set {
+        iD_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "Ten" field.</summary>
+    public const int TenFieldNumber = 2;
+    private string ten_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Ten {
+      get { return ten_; }
+      set {
+        ten_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "ngayBatDau" field.</summary>
+    public const int NgayBatDauFieldNumber = 3;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp ngayBatDau_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp NgayBatDau {
+      get { return ngayBatDau_; }
+      set {
+        ngayBatDau_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "ngayKetThuc" field.</summary>
+    public const int NgayKetThucFieldNumber = 4;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp ngayKetThuc_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Google.Protobuf.WellKnownTypes.Timestamp NgayKetThuc {
+      get { return ngayKetThuc_; }
+      set {
+        ngayKetThuc_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "DiaChi" field.</summary>
+    public const int DiaChiFieldNumber = 5;
+    private string diaChi_ = "";
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string DiaChi {
+      get { return diaChi_; }
+      set {
+        diaChi_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "IdLopHoc" field.</summary>
+    public const int IdLopHocFieldNumber = 6;
+    private int idLopHoc_;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int IdLopHoc {
+      get { return idLopHoc_; }
+      set {
+        idLopHoc_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as SinhVienSearchRequest);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(SinhVienSearchRequest other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (ID != other.ID) return false;
+      if (Ten != other.Ten) return false;
+      if (!object.Equals(NgayBatDau, other.NgayBatDau)) return false;
+      if (!object.Equals(NgayKetThuc, other.NgayKetThuc)) return false;
+      if (DiaChi != other.DiaChi) return false;
+      if (IdLopHoc != other.IdLopHoc) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (ID != 0) hash ^= ID.GetHashCode();
+      if (Ten.Length != 0) hash ^= Ten.GetHashCode();
+      if (ngayBatDau_ != null) hash ^= NgayBatDau.GetHashCode();
+      if (ngayKetThuc_ != null) hash ^= NgayKetThuc.GetHashCode();
+      if (DiaChi.Length != 0) hash ^= DiaChi.GetHashCode();
+      if (IdLopHoc != 0) hash ^= IdLopHoc.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (ID != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(ID);
+      }
+      if (Ten.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Ten);
+      }
+      if (ngayBatDau_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(NgayBatDau);
+      }
+      if (ngayKetThuc_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(NgayKetThuc);
+      }
+      if (DiaChi.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(DiaChi);
+      }
+      if (IdLopHoc != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(IdLopHoc);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (ID != 0) {
+        output.WriteRawTag(8);
+        output.WriteInt32(ID);
+      }
+      if (Ten.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Ten);
+      }
+      if (ngayBatDau_ != null) {
+        output.WriteRawTag(26);
+        output.WriteMessage(NgayBatDau);
+      }
+      if (ngayKetThuc_ != null) {
+        output.WriteRawTag(34);
+        output.WriteMessage(NgayKetThuc);
+      }
+      if (DiaChi.Length != 0) {
+        output.WriteRawTag(42);
+        output.WriteString(DiaChi);
+      }
+      if (IdLopHoc != 0) {
+        output.WriteRawTag(48);
+        output.WriteInt32(IdLopHoc);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (ID != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(ID);
+      }
+      if (Ten.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Ten);
+      }
+      if (ngayBatDau_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(NgayBatDau);
+      }
+      if (ngayKetThuc_ != null) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(NgayKetThuc);
+      }
+      if (DiaChi.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(DiaChi);
+      }
+      if (IdLopHoc != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeInt32Size(IdLopHoc);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(SinhVienSearchRequest other) {
+      if (other == null) {
+        return;
+      }
+      if (other.ID != 0) {
+        ID = other.ID;
+      }
+      if (other.Ten.Length != 0) {
+        Ten = other.Ten;
+      }
+      if (other.ngayBatDau_ != null) {
+        if (ngayBatDau_ == null) {
+          NgayBatDau = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        NgayBatDau.MergeFrom(other.NgayBatDau);
+      }
+      if (other.ngayKetThuc_ != null) {
+        if (ngayKetThuc_ == null) {
+          NgayKetThuc = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+        }
+        NgayKetThuc.MergeFrom(other.NgayKetThuc);
+      }
+      if (other.DiaChi.Length != 0) {
+        DiaChi = other.DiaChi;
+      }
+      if (other.IdLopHoc != 0) {
+        IdLopHoc = other.IdLopHoc;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            ID = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            Ten = input.ReadString();
+            break;
+          }
+          case 26: {
+            if (ngayBatDau_ == null) {
+              NgayBatDau = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(NgayBatDau);
+            break;
+          }
+          case 34: {
+            if (ngayKetThuc_ == null) {
+              NgayKetThuc = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(NgayKetThuc);
+            break;
+          }
+          case 42: {
+            DiaChi = input.ReadString();
+            break;
+          }
+          case 48: {
+            IdLopHoc = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            ID = input.ReadInt32();
+            break;
+          }
+          case 18: {
+            Ten = input.ReadString();
+            break;
+          }
+          case 26: {
+            if (ngayBatDau_ == null) {
+              NgayBatDau = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(NgayBatDau);
+            break;
+          }
+          case 34: {
+            if (ngayKetThuc_ == null) {
+              NgayKetThuc = new global::Google.Protobuf.WellKnownTypes.Timestamp();
+            }
+            input.ReadMessage(NgayKetThuc);
+            break;
+          }
+          case 42: {
+            DiaChi = input.ReadString();
+            break;
+          }
+          case 48: {
+            IdLopHoc = input.ReadInt32();
+            break;
+          }
+        }
+      }
+    }
+    #endif
+
+  }
+
   [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
   public sealed partial class SinhVienRequest : pb::IMessage<SinhVienRequest>
   #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
@@ -85,7 +1056,7 @@ namespace QuanLySvGRPC.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::QuanLySvGRPC.Protos.SinhvienReflection.Descriptor.MessageTypes[0]; }
+      get { return global::QuanLySvGRPC.Protos.SinhvienReflection.Descriptor.MessageTypes[3]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -275,7 +1246,7 @@ namespace QuanLySvGRPC.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::QuanLySvGRPC.Protos.SinhvienReflection.Descriptor.MessageTypes[1]; }
+      get { return global::QuanLySvGRPC.Protos.SinhvienReflection.Descriptor.MessageTypes[4]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -465,7 +1436,7 @@ namespace QuanLySvGRPC.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::QuanLySvGRPC.Protos.SinhvienReflection.Descriptor.MessageTypes[2]; }
+      get { return global::QuanLySvGRPC.Protos.SinhvienReflection.Descriptor.MessageTypes[5]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -525,10 +1496,10 @@ namespace QuanLySvGRPC.Protos {
 
     /// <summary>Field number for the "ngaysinh" field.</summary>
     public const int NgaysinhFieldNumber = 3;
-    private global::QuanLySvGRPC.Protos.Birthday ngaysinh_;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp ngaysinh_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::QuanLySvGRPC.Protos.Birthday Ngaysinh {
+    public global::Google.Protobuf.WellKnownTypes.Timestamp Ngaysinh {
       get { return ngaysinh_; }
       set {
         ngaysinh_ = value;
@@ -704,7 +1675,7 @@ namespace QuanLySvGRPC.Protos {
       }
       if (other.ngaysinh_ != null) {
         if (ngaysinh_ == null) {
-          Ngaysinh = new global::QuanLySvGRPC.Protos.Birthday();
+          Ngaysinh = new global::Google.Protobuf.WellKnownTypes.Timestamp();
         }
         Ngaysinh.MergeFrom(other.Ngaysinh);
       }
@@ -739,7 +1710,7 @@ namespace QuanLySvGRPC.Protos {
           }
           case 26: {
             if (ngaysinh_ == null) {
-              Ngaysinh = new global::QuanLySvGRPC.Protos.Birthday();
+              Ngaysinh = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }
             input.ReadMessage(Ngaysinh);
             break;
@@ -777,7 +1748,7 @@ namespace QuanLySvGRPC.Protos {
           }
           case 26: {
             if (ngaysinh_ == null) {
-              Ngaysinh = new global::QuanLySvGRPC.Protos.Birthday();
+              Ngaysinh = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }
             input.ReadMessage(Ngaysinh);
             break;
@@ -812,7 +1783,7 @@ namespace QuanLySvGRPC.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::QuanLySvGRPC.Protos.SinhvienReflection.Descriptor.MessageTypes[3]; }
+      get { return global::QuanLySvGRPC.Protos.SinhvienReflection.Descriptor.MessageTypes[6]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -991,7 +1962,7 @@ namespace QuanLySvGRPC.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::QuanLySvGRPC.Protos.SinhvienReflection.Descriptor.MessageTypes[4]; }
+      get { return global::QuanLySvGRPC.Protos.SinhvienReflection.Descriptor.MessageTypes[7]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1170,7 +2141,7 @@ namespace QuanLySvGRPC.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::QuanLySvGRPC.Protos.SinhvienReflection.Descriptor.MessageTypes[5]; }
+      get { return global::QuanLySvGRPC.Protos.SinhvienReflection.Descriptor.MessageTypes[8]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -1230,10 +2201,10 @@ namespace QuanLySvGRPC.Protos {
 
     /// <summary>Field number for the "ngaysinh" field.</summary>
     public const int NgaysinhFieldNumber = 3;
-    private global::QuanLySvGRPC.Protos.Birthday ngaysinh_;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp ngaysinh_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::QuanLySvGRPC.Protos.Birthday Ngaysinh {
+    public global::Google.Protobuf.WellKnownTypes.Timestamp Ngaysinh {
       get { return ngaysinh_; }
       set {
         ngaysinh_ = value;
@@ -1409,7 +2380,7 @@ namespace QuanLySvGRPC.Protos {
       }
       if (other.ngaysinh_ != null) {
         if (ngaysinh_ == null) {
-          Ngaysinh = new global::QuanLySvGRPC.Protos.Birthday();
+          Ngaysinh = new global::Google.Protobuf.WellKnownTypes.Timestamp();
         }
         Ngaysinh.MergeFrom(other.Ngaysinh);
       }
@@ -1447,7 +2418,7 @@ namespace QuanLySvGRPC.Protos {
           }
           case 26: {
             if (ngaysinh_ == null) {
-              Ngaysinh = new global::QuanLySvGRPC.Protos.Birthday();
+              Ngaysinh = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }
             input.ReadMessage(Ngaysinh);
             break;
@@ -1488,7 +2459,7 @@ namespace QuanLySvGRPC.Protos {
           }
           case 26: {
             if (ngaysinh_ == null) {
-              Ngaysinh = new global::QuanLySvGRPC.Protos.Birthday();
+              Ngaysinh = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }
             input.ReadMessage(Ngaysinh);
             break;
@@ -1502,270 +2473,6 @@ namespace QuanLySvGRPC.Protos {
               LopHoc = new global::QuanLySvGRPC.Protos.LHoc();
             }
             input.ReadMessage(LopHoc);
-            break;
-          }
-        }
-      }
-    }
-    #endif
-
-  }
-
-  [global::System.Diagnostics.DebuggerDisplayAttribute("{ToString(),nq}")]
-  public sealed partial class Birthday : pb::IMessage<Birthday>
-  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      , pb::IBufferMessage
-  #endif
-  {
-    private static readonly pb::MessageParser<Birthday> _parser = new pb::MessageParser<Birthday>(() => new Birthday());
-    private pb::UnknownFieldSet _unknownFields;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pb::MessageParser<Birthday> Parser { get { return _parser; } }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public static pbr::MessageDescriptor Descriptor {
-      get { return global::QuanLySvGRPC.Protos.SinhvienReflection.Descriptor.MessageTypes[6]; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    pbr::MessageDescriptor pb::IMessage.Descriptor {
-      get { return Descriptor; }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public Birthday() {
-      OnConstruction();
-    }
-
-    partial void OnConstruction();
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public Birthday(Birthday other) : this() {
-      year_ = other.year_;
-      month_ = other.month_;
-      day_ = other.day_;
-      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public Birthday Clone() {
-      return new Birthday(this);
-    }
-
-    /// <summary>Field number for the "year" field.</summary>
-    public const int YearFieldNumber = 1;
-    private int year_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Year {
-      get { return year_; }
-      set {
-        year_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "month" field.</summary>
-    public const int MonthFieldNumber = 2;
-    private int month_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Month {
-      get { return month_; }
-      set {
-        month_ = value;
-      }
-    }
-
-    /// <summary>Field number for the "day" field.</summary>
-    public const int DayFieldNumber = 3;
-    private int day_;
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int Day {
-      get { return day_; }
-      set {
-        day_ = value;
-      }
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override bool Equals(object other) {
-      return Equals(other as Birthday);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public bool Equals(Birthday other) {
-      if (ReferenceEquals(other, null)) {
-        return false;
-      }
-      if (ReferenceEquals(other, this)) {
-        return true;
-      }
-      if (Year != other.Year) return false;
-      if (Month != other.Month) return false;
-      if (Day != other.Day) return false;
-      return Equals(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override int GetHashCode() {
-      int hash = 1;
-      if (Year != 0) hash ^= Year.GetHashCode();
-      if (Month != 0) hash ^= Month.GetHashCode();
-      if (Day != 0) hash ^= Day.GetHashCode();
-      if (_unknownFields != null) {
-        hash ^= _unknownFields.GetHashCode();
-      }
-      return hash;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public override string ToString() {
-      return pb::JsonFormatter.ToDiagnosticString(this);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void WriteTo(pb::CodedOutputStream output) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      output.WriteRawMessage(this);
-    #else
-      if (Year != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Year);
-      }
-      if (Month != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(Month);
-      }
-      if (Day != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(Day);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(output);
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
-      if (Year != 0) {
-        output.WriteRawTag(8);
-        output.WriteInt32(Year);
-      }
-      if (Month != 0) {
-        output.WriteRawTag(16);
-        output.WriteInt32(Month);
-      }
-      if (Day != 0) {
-        output.WriteRawTag(24);
-        output.WriteInt32(Day);
-      }
-      if (_unknownFields != null) {
-        _unknownFields.WriteTo(ref output);
-      }
-    }
-    #endif
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public int CalculateSize() {
-      int size = 0;
-      if (Year != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Year);
-      }
-      if (Month != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Month);
-      }
-      if (Day != 0) {
-        size += 1 + pb::CodedOutputStream.ComputeInt32Size(Day);
-      }
-      if (_unknownFields != null) {
-        size += _unknownFields.CalculateSize();
-      }
-      return size;
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(Birthday other) {
-      if (other == null) {
-        return;
-      }
-      if (other.Year != 0) {
-        Year = other.Year;
-      }
-      if (other.Month != 0) {
-        Month = other.Month;
-      }
-      if (other.Day != 0) {
-        Day = other.Day;
-      }
-      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
-    }
-
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public void MergeFrom(pb::CodedInputStream input) {
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-      input.ReadRawMessage(this);
-    #else
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
-            break;
-          case 8: {
-            Year = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            Month = input.ReadInt32();
-            break;
-          }
-          case 24: {
-            Day = input.ReadInt32();
-            break;
-          }
-        }
-      }
-    #endif
-    }
-
-    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
-      uint tag;
-      while ((tag = input.ReadTag()) != 0) {
-        switch(tag) {
-          default:
-            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
-            break;
-          case 8: {
-            Year = input.ReadInt32();
-            break;
-          }
-          case 16: {
-            Month = input.ReadInt32();
-            break;
-          }
-          case 24: {
-            Day = input.ReadInt32();
             break;
           }
         }
@@ -1790,7 +2497,7 @@ namespace QuanLySvGRPC.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::QuanLySvGRPC.Protos.SinhvienReflection.Descriptor.MessageTypes[7]; }
+      get { return global::QuanLySvGRPC.Protos.SinhvienReflection.Descriptor.MessageTypes[9]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2100,7 +2807,7 @@ namespace QuanLySvGRPC.Protos {
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public static pbr::MessageDescriptor Descriptor {
-      get { return global::QuanLySvGRPC.Protos.SinhvienReflection.Descriptor.MessageTypes[8]; }
+      get { return global::QuanLySvGRPC.Protos.SinhvienReflection.Descriptor.MessageTypes[10]; }
     }
 
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2158,10 +2865,10 @@ namespace QuanLySvGRPC.Protos {
 
     /// <summary>Field number for the "ngaysinh" field.</summary>
     public const int NgaysinhFieldNumber = 3;
-    private global::QuanLySvGRPC.Protos.Birthday ngaysinh_;
+    private global::Google.Protobuf.WellKnownTypes.Timestamp ngaysinh_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::QuanLySvGRPC.Protos.Birthday Ngaysinh {
+    public global::Google.Protobuf.WellKnownTypes.Timestamp Ngaysinh {
       get { return ngaysinh_; }
       set {
         ngaysinh_ = value;
@@ -2287,7 +2994,7 @@ namespace QuanLySvGRPC.Protos {
       }
       if (other.ngaysinh_ != null) {
         if (ngaysinh_ == null) {
-          Ngaysinh = new global::QuanLySvGRPC.Protos.Birthday();
+          Ngaysinh = new global::Google.Protobuf.WellKnownTypes.Timestamp();
         }
         Ngaysinh.MergeFrom(other.Ngaysinh);
       }
@@ -2316,7 +3023,7 @@ namespace QuanLySvGRPC.Protos {
           }
           case 26: {
             if (ngaysinh_ == null) {
-              Ngaysinh = new global::QuanLySvGRPC.Protos.Birthday();
+              Ngaysinh = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }
             input.ReadMessage(Ngaysinh);
             break;
@@ -2346,7 +3053,7 @@ namespace QuanLySvGRPC.Protos {
           }
           case 26: {
             if (ngaysinh_ == null) {
-              Ngaysinh = new global::QuanLySvGRPC.Protos.Birthday();
+              Ngaysinh = new global::Google.Protobuf.WellKnownTypes.Timestamp();
             }
             input.ReadMessage(Ngaysinh);
             break;
