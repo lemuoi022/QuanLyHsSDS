@@ -1,0 +1,87 @@
+syntax = "proto3";
+
+option csharp_namespace = "QuanLySvGRPC.Protos";
+import "google/protobuf/wrappers.proto";
+import "google/protobuf/timestamp.proto";
+package sinhvien;
+
+
+service SinhVienRPC {
+  rpc GetSinhVienDetail (SinhVienRequest) returns (SinhVienReply);
+  rpc GetAllSinhVien (SinhVienRequest) returns(ListSinhVienReply);
+  rpc UpdateSinhVien(SinhVienModelRequest) returns (SinhVienReply);
+  rpc DeleteSinhVien(SinhVienRequest) returns (google.protobuf.BoolValue);
+  rpc AddSinhVien(SinhVienModelRequest) returns (SinhVienReply);
+  rpc ArrangeSinhVien(SinhVienRequest) returns(ListSinhVienReply);
+  rpc GetPageSinhVien(PageSinhVienRequest) returns (PageSinhVienReply);
+  rpc GetAllLopHoc(LopHocRequest) returns (ListLopHocReply);
+}
+service LopRPC {
+  rpc GetAllLopHoc(LopHocRequest) returns (ListLopHocReply);
+}
+message PageSinhVienReply {
+    repeated SinhVienReply SvReply = 1;
+    int32 pageCount = 2;
+    int32 pageSize = 3;
+    int32 pageNumber = 4;
+}
+message PageSinhVienRequest{
+	int32 pageSize = 1;
+	int32 pageNumber = 2;
+	SinhVienSearchRequest SvSearch= 3;
+}
+message SinhVienSearchRequest
+{
+	int32 ID = 1;
+	string Ten = 2;	
+	google.protobuf.Timestamp ngayBatDau = 3;
+	google.protobuf.Timestamp ngayKetThuc = 4;
+	string DiaChi = 5;
+	int32 IdLopHoc = 6;
+}
+message SinhVienRequest
+{
+	int32 id = 1;
+}
+message LopHocRequest
+{
+	int32 id = 1;
+}
+message SinhVienModelRequest
+{
+	int32 ID = 1;
+	string Ten = 2;	
+	google.protobuf.Timestamp ngaysinh = 3;
+	string DiaChi = 4;
+	int32 IdLopHoc = 5;
+}
+message ListLopHocReply
+{
+	repeated LHoc LhReply = 1;
+}
+message ListSinhVienReply
+{
+	repeated SinhVienReply SvReply = 1;
+}
+message SinhVienReply
+{
+	int32 ID = 1;
+	string Ten = 2;	
+	google.protobuf.Timestamp ngaysinh = 3;
+	string DiaChi = 4;
+	LHoc LopHoc = 5;
+}
+
+message LHoc
+{
+	int32 ID = 1;
+	string TenLop = 2;
+	string MonHoc = 3;
+	GVien Gvien = 4;
+}
+message GVien 
+{
+	int32 ID = 1;
+	string Ten = 2;
+	google.protobuf.Timestamp ngaysinh = 3;
+}
