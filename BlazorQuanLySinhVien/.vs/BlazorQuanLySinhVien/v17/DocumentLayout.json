@@ -1,0 +1,847 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0A50A93C-D140-4B87-B5EE-CC96D4E9A2E9}|..\\gRPCSinhVien\\QuanLySvGRPC\\QuanLySvGRPC.csproj|d:\\daotaosds\\grpcsinhvien\\quanlysvgrpc\\repository\\sinhvienrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|d:\\daotaosds\\blazorquanlysinhvien\\pages\\sinhvien\\chartsinhvien.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|solutionrelative:pages\\sinhvien\\chartsinhvien.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|d:\\daotaosds\\blazorquanlysinhvien\\dto\\sinhvientheolopdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|solutionrelative:dto\\sinhvientheolopdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|d:\\daotaosds\\blazorquanlysinhvien\\serviceblazor\\sinhvienserviceblazor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|solutionrelative:serviceblazor\\sinhvienserviceblazor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|d:\\daotaosds\\blazorquanlysinhvien\\serviceblazor\\interface\\isinhvienserviceblazor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|solutionrelative:serviceblazor\\interface\\isinhvienserviceblazor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|d:\\daotaosds\\blazorquanlysinhvien\\pages\\sinhvien\\danhsachsinhvien.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|solutionrelative:pages\\sinhvien\\danhsachsinhvien.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|d:\\daotaosds\\blazorquanlysinhvien\\pages\\sinhvien\\chartsinhvien.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|solutionrelative:pages\\sinhvien\\chartsinhvien.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|d:\\daotaosds\\blazorquanlysinhvien\\pages\\sinhvien\\popupsinhvien.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|solutionrelative:pages\\sinhvien\\popupsinhvien.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|d:\\daotaosds\\blazorquanlysinhvien\\pages\\sinhvien\\danhsachsinhvien.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|solutionrelative:pages\\sinhvien\\danhsachsinhvien.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|d:\\daotaosds\\blazorquanlysinhvien\\serviceblazor\\interface\\iexcelserviceblazor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|solutionrelative:serviceblazor\\interface\\iexcelserviceblazor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|d:\\daotaosds\\blazorquanlysinhvien\\serviceblazor\\excelserviceblazor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|solutionrelative:serviceblazor\\excelserviceblazor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|d:\\daotaosds\\blazorquanlysinhvien\\pages\\sinhvien\\danhsachlophoc.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|solutionrelative:pages\\sinhvien\\danhsachlophoc.razor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|d:\\daotaosds\\blazorquanlysinhvien\\pages\\sinhvien\\danhsachlophoc.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|solutionrelative:pages\\sinhvien\\danhsachlophoc.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|d:\\daotaosds\\blazorquanlysinhvien\\dto\\sinhviensearchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|solutionrelative:dto\\sinhviensearchdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|d:\\daotaosds\\blazorquanlysinhvien\\dto\\sinhviendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|solutionrelative:dto\\sinhviendto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|d:\\daotaosds\\blazorquanlysinhvien\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|d:\\daotaosds\\blazorquanlysinhvien\\pages\\sinhvien\\popupsinhvien.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|solutionrelative:pages\\sinhvien\\popupsinhvien.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A50A93C-D140-4B87-B5EE-CC96D4E9A2E9}|..\\gRPCSinhVien\\QuanLySvGRPC\\QuanLySvGRPC.csproj|d:\\daotaosds\\grpcsinhvien\\quanlysvgrpc\\servicesgrpc\\sinhvienservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A50A93C-D140-4B87-B5EE-CC96D4E9A2E9}|..\\gRPCSinhVien\\QuanLySvGRPC\\QuanLySvGRPC.csproj|d:\\daotaosds\\grpcsinhvien\\quanlysvgrpc\\service\\interface\\iquanlysv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A50A93C-D140-4B87-B5EE-CC96D4E9A2E9}|..\\gRPCSinhVien\\QuanLySvGRPC\\QuanLySvGRPC.csproj|d:\\daotaosds\\grpcsinhvien\\quanlysvgrpc\\service\\quanlysv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A50A93C-D140-4B87-B5EE-CC96D4E9A2E9}|..\\gRPCSinhVien\\QuanLySvGRPC\\QuanLySvGRPC.csproj|d:\\daotaosds\\grpcsinhvien\\quanlysvgrpc\\repository\\interface\\isinhvienrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A50A93C-D140-4B87-B5EE-CC96D4E9A2E9}|..\\gRPCSinhVien\\QuanLySvGRPC\\QuanLySvGRPC.csproj|d:\\daotaosds\\grpcsinhvien\\quanlysvgrpc\\model\\domain\\sinhvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|d:\\daotaosds\\blazorquanlysinhvien\\pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|solutionrelative:pages\\_host.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A50A93C-D140-4B87-B5EE-CC96D4E9A2E9}|..\\gRPCSinhVien\\QuanLySvGRPC\\QuanLySvGRPC.csproj|d:\\daotaosds\\grpcsinhvien\\quanlysvgrpc\\model\\sinhvientheolopdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A50A93C-D140-4B87-B5EE-CC96D4E9A2E9}|..\\gRPCSinhVien\\QuanLySvGRPC\\QuanLySvGRPC.csproj|d:\\daotaosds\\grpcsinhvien\\quanlysvgrpc\\servicesgrpc\\lophocservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A50A93C-D140-4B87-B5EE-CC96D4E9A2E9}|..\\gRPCSinhVien\\QuanLySvGRPC\\QuanLySvGRPC.csproj|d:\\daotaosds\\grpcsinhvien\\quanlysvgrpc\\protos\\sinhvien.proto||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A50A93C-D140-4B87-B5EE-CC96D4E9A2E9}|..\\gRPCSinhVien\\QuanLySvGRPC\\QuanLySvGRPC.csproj|d:\\daotaosds\\grpcsinhvien\\quanlysvgrpc\\repository\\giaovienrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{098EAA19-2BA0-4E87-B6E3-8E064EF2B369}|..\\ClassMap\\Shared.csproj|d:\\daotaosds\\classmap\\sinhvienrpc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{098EAA19-2BA0-4E87-B6E3-8E064EF2B369}|..\\ClassMap\\Shared.csproj|d:\\daotaosds\\classmap\\shared.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A50A93C-D140-4B87-B5EE-CC96D4E9A2E9}|..\\gRPCSinhVien\\QuanLySvGRPC\\QuanLySvGRPC.csproj|d:\\daotaosds\\grpcsinhvien\\quanlysvgrpc\\model\\map\\sinhvienmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A50A93C-D140-4B87-B5EE-CC96D4E9A2E9}|..\\gRPCSinhVien\\QuanLySvGRPC\\QuanLySvGRPC.csproj|d:\\daotaosds\\grpcsinhvien\\quanlysvgrpc\\model\\map\\lophoc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A50A93C-D140-4B87-B5EE-CC96D4E9A2E9}|..\\gRPCSinhVien\\QuanLySvGRPC\\QuanLySvGRPC.csproj|d:\\daotaosds\\grpcsinhvien\\quanlysvgrpc\\repository\\lophocrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A50A93C-D140-4B87-B5EE-CC96D4E9A2E9}|..\\gRPCSinhVien\\QuanLySvGRPC\\QuanLySvGRPC.csproj|d:\\daotaosds\\grpcsinhvien\\quanlysvgrpc\\fluentnhibernatehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A50A93C-D140-4B87-B5EE-CC96D4E9A2E9}|..\\gRPCSinhVien\\QuanLySvGRPC\\QuanLySvGRPC.csproj|d:\\daotaosds\\grpcsinhvien\\quanlysvgrpc\\model\\map\\giaovienmap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|d:\\daotaosds\\blazorquanlysinhvien\\dto\\pageviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|solutionrelative:dto\\pageviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|d:\\daotaosds\\blazorquanlysinhvien\\dto\\lophocdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|solutionrelative:dto\\lophocdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|d:\\daotaosds\\blazorquanlysinhvien\\blazorquanlysinhvien.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|solutionrelative:blazorquanlysinhvien.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|d:\\daotaosds\\blazorquanlysinhvien\\shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|solutionrelative:shared\\navmenu.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A50A93C-D140-4B87-B5EE-CC96D4E9A2E9}|..\\gRPCSinhVien\\QuanLySvGRPC\\QuanLySvGRPC.csproj|d:\\daotaosds\\grpcsinhvien\\quanlysvgrpc\\model\\sinhviensearch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|d:\\daotaosds\\blazorquanlysinhvien\\serviceblazor\\lophocserviceblazor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|solutionrelative:serviceblazor\\lophocserviceblazor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A50A93C-D140-4B87-B5EE-CC96D4E9A2E9}|..\\gRPCSinhVien\\QuanLySvGRPC\\QuanLySvGRPC.csproj|d:\\daotaosds\\grpcsinhvien\\quanlysvgrpc\\service\\quanlylh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A50A93C-D140-4B87-B5EE-CC96D4E9A2E9}|..\\gRPCSinhVien\\QuanLySvGRPC\\QuanLySvGRPC.csproj|d:\\daotaosds\\grpcsinhvien\\quanlysvgrpc\\service\\quanlygv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|d:\\daotaosds\\blazorquanlysinhvien\\serviceblazor\\interface\\ilophocserviceblazor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|solutionrelative:serviceblazor\\interface\\ilophocserviceblazor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A50A93C-D140-4B87-B5EE-CC96D4E9A2E9}|..\\gRPCSinhVien\\QuanLySvGRPC\\QuanLySvGRPC.csproj|d:\\daotaosds\\grpcsinhvien\\quanlysvgrpc\\servicesgrpc\\greeterservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A50A93C-D140-4B87-B5EE-CC96D4E9A2E9}|..\\gRPCSinhVien\\QuanLySvGRPC\\QuanLySvGRPC.csproj|d:\\daotaosds\\grpcsinhvien\\quanlysvgrpc\\repository\\interface\\ilophocrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A50A93C-D140-4B87-B5EE-CC96D4E9A2E9}|..\\gRPCSinhVien\\QuanLySvGRPC\\QuanLySvGRPC.csproj|d:\\daotaosds\\grpcsinhvien\\quanlysvgrpc\\repository\\interface\\igiaovienrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A50A93C-D140-4B87-B5EE-CC96D4E9A2E9}|..\\gRPCSinhVien\\QuanLySvGRPC\\QuanLySvGRPC.csproj|d:\\daotaosds\\grpcsinhvien\\quanlysvgrpc\\service\\interface\\iquanlylh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A50A93C-D140-4B87-B5EE-CC96D4E9A2E9}|..\\gRPCSinhVien\\QuanLySvGRPC\\QuanLySvGRPC.csproj|d:\\daotaosds\\grpcsinhvien\\quanlysvgrpc\\service\\interface\\iquanlygv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A50A93C-D140-4B87-B5EE-CC96D4E9A2E9}|..\\gRPCSinhVien\\QuanLySvGRPC\\QuanLySvGRPC.csproj|d:\\daotaosds\\grpcsinhvien\\quanlysvgrpc\\model\\pageview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|d:\\daotaosds\\blazorquanlysinhvien\\utils\\fileutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|solutionrelative:utils\\fileutils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|d:\\daotaosds\\blazorquanlysinhvien\\app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{20961446-83D8-474B-9599-61DC48B3027C}|BlazorQuanLySinhVien.csproj|solutionrelative:app.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0A50A93C-D140-4B87-B5EE-CC96D4E9A2E9}|..\\gRPCSinhVien\\QuanLySvGRPC\\QuanLySvGRPC.csproj|d:\\daotaosds\\grpcsinhvien\\quanlysvgrpc\\quanlysvgrpc.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 223,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ChartSinhVien.razor.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\Pages\\SinhVien\\ChartSinhVien.razor.cs",
+              "RelativeDocumentMoniker": "Pages\\SinhVien\\ChartSinhVien.razor.cs",
+              "ToolTip": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\Pages\\SinhVien\\ChartSinhVien.razor.cs",
+              "RelativeToolTip": "Pages\\SinhVien\\ChartSinhVien.razor.cs",
+              "ViewState": "AQIAABsAAAAAAAAAAAAYwCEAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T04:27:39.861Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ISinhVienServiceBlazor.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\ServiceBlazor\\Interface\\ISinhVienServiceBlazor.cs",
+              "RelativeDocumentMoniker": "ServiceBlazor\\Interface\\ISinhVienServiceBlazor.cs",
+              "ToolTip": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\ServiceBlazor\\Interface\\ISinhVienServiceBlazor.cs",
+              "RelativeToolTip": "ServiceBlazor\\Interface\\ISinhVienServiceBlazor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAkAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T07:46:12.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SinhVienServiceBlazor.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\ServiceBlazor\\SinhVienServiceBlazor.cs",
+              "RelativeDocumentMoniker": "ServiceBlazor\\SinhVienServiceBlazor.cs",
+              "ToolTip": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\ServiceBlazor\\SinhVienServiceBlazor.cs",
+              "RelativeToolTip": "ServiceBlazor\\SinhVienServiceBlazor.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAowAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T02:13:42.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SinhVienRepository.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Repository\\SinhVienRepository.cs",
+              "RelativeDocumentMoniker": "..\\gRPCSinhVien\\QuanLySvGRPC\\Repository\\SinhVienRepository.cs",
+              "ToolTip": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Repository\\SinhVienRepository.cs",
+              "RelativeToolTip": "..\\gRPCSinhVien\\QuanLySvGRPC\\Repository\\SinhVienRepository.cs",
+              "ViewState": "AQIAAI0AAAAAAAAAAAAYwJoAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T06:42:06.274Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DanhSachSinhVien.razor.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\Pages\\SinhVien\\DanhSachSinhVien.razor.cs",
+              "RelativeDocumentMoniker": "Pages\\SinhVien\\DanhSachSinhVien.razor.cs",
+              "ToolTip": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\Pages\\SinhVien\\DanhSachSinhVien.razor.cs",
+              "RelativeToolTip": "Pages\\SinhVien\\DanhSachSinhVien.razor.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAIAwwC0AAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T06:41:54.828Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SinhVienTheoLopDTO.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\DTO\\SinhVienTheoLopDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\SinhVienTheoLopDTO.cs",
+              "ToolTip": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\DTO\\SinhVienTheoLopDTO.cs",
+              "RelativeToolTip": "DTO\\SinhVienTheoLopDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-12T02:16:38.856Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ChartSinhVien.razor",
+              "DocumentMoniker": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\Pages\\SinhVien\\ChartSinhVien.razor",
+              "RelativeDocumentMoniker": "Pages\\SinhVien\\ChartSinhVien.razor",
+              "ToolTip": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\Pages\\SinhVien\\ChartSinhVien.razor",
+              "RelativeToolTip": "Pages\\SinhVien\\ChartSinhVien.razor",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB4AAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-10T04:27:16.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "PopupSinhVien.razor.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\Pages\\SinhVien\\PopupSinhVien.razor.cs",
+              "RelativeDocumentMoniker": "Pages\\SinhVien\\PopupSinhVien.razor.cs",
+              "ToolTip": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\Pages\\SinhVien\\PopupSinhVien.razor.cs",
+              "RelativeToolTip": "Pages\\SinhVien\\PopupSinhVien.razor.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAewC4AAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T06:42:49.131Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DanhSachSinhVien.razor",
+              "DocumentMoniker": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\Pages\\SinhVien\\DanhSachSinhVien.razor",
+              "RelativeDocumentMoniker": "Pages\\SinhVien\\DanhSachSinhVien.razor",
+              "ToolTip": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\Pages\\SinhVien\\DanhSachSinhVien.razor",
+              "RelativeToolTip": "Pages\\SinhVien\\DanhSachSinhVien.razor",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAIwFcAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-06T06:43:42.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IExcelServiceBlazor.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\ServiceBlazor\\Interface\\IExcelServiceBlazor.cs",
+              "RelativeDocumentMoniker": "ServiceBlazor\\Interface\\IExcelServiceBlazor.cs",
+              "ToolTip": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\ServiceBlazor\\Interface\\IExcelServiceBlazor.cs",
+              "RelativeToolTip": "ServiceBlazor\\Interface\\IExcelServiceBlazor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T02:25:32.987Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ExcelServiceBlazor.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\ServiceBlazor\\ExcelServiceBlazor.cs",
+              "RelativeDocumentMoniker": "ServiceBlazor\\ExcelServiceBlazor.cs",
+              "ToolTip": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\ServiceBlazor\\ExcelServiceBlazor.cs",
+              "RelativeToolTip": "ServiceBlazor\\ExcelServiceBlazor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T04:54:13.807Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "DanhSachLopHoc.razor.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\Pages\\SinhVien\\DanhSachLopHoc.razor.cs",
+              "RelativeDocumentMoniker": "Pages\\SinhVien\\DanhSachLopHoc.razor.cs",
+              "ToolTip": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\Pages\\SinhVien\\DanhSachLopHoc.razor.cs",
+              "RelativeToolTip": "Pages\\SinhVien\\DanhSachLopHoc.razor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T03:59:21.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DanhSachLopHoc.razor",
+              "DocumentMoniker": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\Pages\\SinhVien\\DanhSachLopHoc.razor",
+              "RelativeDocumentMoniker": "Pages\\SinhVien\\DanhSachLopHoc.razor",
+              "ToolTip": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\Pages\\SinhVien\\DanhSachLopHoc.razor",
+              "RelativeToolTip": "Pages\\SinhVien\\DanhSachLopHoc.razor",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAADMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-07T03:57:26.457Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SinhVienSearchDTO.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\DTO\\SinhVienSearchDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\SinhVienSearchDTO.cs",
+              "ToolTip": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\DTO\\SinhVienSearchDTO.cs",
+              "RelativeToolTip": "DTO\\SinhVienSearchDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T07:43:13.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SinhVienDTO.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\DTO\\SinhVienDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\SinhVienDTO.cs",
+              "ToolTip": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\DTO\\SinhVienDTO.cs",
+              "RelativeToolTip": "DTO\\SinhVienDTO.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T07:44:52.023Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAArwDAAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T04:14:15.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PopupSinhVien.razor",
+              "DocumentMoniker": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\Pages\\SinhVien\\PopupSinhVien.razor",
+              "RelativeDocumentMoniker": "Pages\\SinhVien\\PopupSinhVien.razor",
+              "ToolTip": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\Pages\\SinhVien\\PopupSinhVien.razor",
+              "RelativeToolTip": "Pages\\SinhVien\\PopupSinhVien.razor",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAAgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-06T06:41:54.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ISinhVienRepository.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Repository\\Interface\\ISinhVienRepository.cs",
+              "RelativeDocumentMoniker": "..\\gRPCSinhVien\\QuanLySvGRPC\\Repository\\Interface\\ISinhVienRepository.cs",
+              "ToolTip": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Repository\\Interface\\ISinhVienRepository.cs",
+              "RelativeToolTip": "..\\gRPCSinhVien\\QuanLySvGRPC\\Repository\\Interface\\ISinhVienRepository.cs",
+              "ViewState": "AQIAAAUAAAAAAAAAAAASwAwAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T09:34:16.041Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SinhVienService.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\ServicesGRPC\\SinhVienService.cs",
+              "RelativeDocumentMoniker": "..\\gRPCSinhVien\\QuanLySvGRPC\\ServicesGRPC\\SinhVienService.cs",
+              "ToolTip": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\ServicesGRPC\\SinhVienService.cs",
+              "RelativeToolTip": "..\\gRPCSinhVien\\QuanLySvGRPC\\ServicesGRPC\\SinhVienService.cs",
+              "ViewState": "AQIAALoAAAAAAAAAAAAgwMEAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T07:19:07.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IQuanLySv.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Service\\Interface\\IQuanLySv.cs",
+              "RelativeDocumentMoniker": "..\\gRPCSinhVien\\QuanLySvGRPC\\Service\\Interface\\IQuanLySv.cs",
+              "ToolTip": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Service\\Interface\\IQuanLySv.cs",
+              "RelativeToolTip": "..\\gRPCSinhVien\\QuanLySvGRPC\\Service\\Interface\\IQuanLySv.cs",
+              "ViewState": "AQIAAAcAAAAAAAAAAAASwA4AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T08:13:26.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "QuanLySv.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Service\\QuanLySv.cs",
+              "RelativeDocumentMoniker": "..\\gRPCSinhVien\\QuanLySvGRPC\\Service\\QuanLySv.cs",
+              "ToolTip": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Service\\QuanLySv.cs",
+              "RelativeToolTip": "..\\gRPCSinhVien\\QuanLySvGRPC\\Service\\QuanLySv.cs",
+              "ViewState": "AQIAADgAAAAAAAAAAAAYwEQAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T09:34:24.048Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "SinhVien.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Model\\Domain\\SinhVien.cs",
+              "RelativeDocumentMoniker": "..\\gRPCSinhVien\\QuanLySvGRPC\\Model\\Domain\\SinhVien.cs",
+              "ToolTip": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Model\\Domain\\SinhVien.cs",
+              "RelativeToolTip": "..\\gRPCSinhVien\\QuanLySvGRPC\\Model\\Domain\\SinhVien.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAACQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T01:55:12.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "_Host.cshtml",
+              "DocumentMoniker": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\Pages\\_Host.cshtml",
+              "RelativeDocumentMoniker": "Pages\\_Host.cshtml",
+              "ToolTip": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\Pages\\_Host.cshtml",
+              "RelativeToolTip": "Pages\\_Host.cshtml",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAwwD0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-06T08:21:24.394Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "LopHocService.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\ServicesGRPC\\LopHocService.cs",
+              "RelativeDocumentMoniker": "..\\gRPCSinhVien\\QuanLySvGRPC\\ServicesGRPC\\LopHocService.cs",
+              "ToolTip": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\ServicesGRPC\\LopHocService.cs",
+              "RelativeToolTip": "..\\gRPCSinhVien\\QuanLySvGRPC\\ServicesGRPC\\LopHocService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T07:47:44.109Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "SinhVienTheoLopDTO.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Model\\SinhVienTheoLopDTO.cs",
+              "RelativeDocumentMoniker": "..\\gRPCSinhVien\\QuanLySvGRPC\\Model\\SinhVienTheoLopDTO.cs",
+              "ToolTip": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Model\\SinhVienTheoLopDTO.cs",
+              "RelativeToolTip": "..\\gRPCSinhVien\\QuanLySvGRPC\\Model\\SinhVienTheoLopDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T09:44:53.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "sinhvien.proto",
+              "DocumentMoniker": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Protos\\sinhvien.proto",
+              "RelativeDocumentMoniker": "..\\gRPCSinhVien\\QuanLySvGRPC\\Protos\\sinhvien.proto",
+              "ToolTip": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Protos\\sinhvien.proto",
+              "RelativeToolTip": "..\\gRPCSinhVien\\QuanLySvGRPC\\Protos\\sinhvien.proto",
+              "ViewState": "AQIAAEIAAAAAAAAAAAAAAFQAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003853|",
+              "WhenOpened": "2024-06-06T07:33:59.119Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "GiaoVienRepository.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Repository\\GiaoVienRepository.cs",
+              "RelativeDocumentMoniker": "..\\gRPCSinhVien\\QuanLySvGRPC\\Repository\\GiaoVienRepository.cs",
+              "ToolTip": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Repository\\GiaoVienRepository.cs",
+              "RelativeToolTip": "..\\gRPCSinhVien\\QuanLySvGRPC\\Repository\\GiaoVienRepository.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAAwBUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T02:17:57.117Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "SinhVienRPC.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\ClassMap\\SinhVienRPC.cs",
+              "RelativeDocumentMoniker": "..\\ClassMap\\SinhVienRPC.cs",
+              "ToolTip": "D:\\daotaoSDS\\ClassMap\\SinhVienRPC.cs",
+              "RelativeToolTip": "..\\ClassMap\\SinhVienRPC.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAJUAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T02:24:58.768Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Shared.csproj",
+              "DocumentMoniker": "D:\\daotaoSDS\\ClassMap\\Shared.csproj",
+              "RelativeDocumentMoniker": "..\\ClassMap\\Shared.csproj",
+              "ToolTip": "D:\\daotaoSDS\\ClassMap\\Shared.csproj",
+              "RelativeToolTip": "..\\ClassMap\\Shared.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-10T01:16:43.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "SinhVienMap.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Model\\Map\\SinhVienMap.cs",
+              "RelativeDocumentMoniker": "..\\gRPCSinhVien\\QuanLySvGRPC\\Model\\Map\\SinhVienMap.cs",
+              "ToolTip": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Model\\Map\\SinhVienMap.cs",
+              "RelativeToolTip": "..\\gRPCSinhVien\\QuanLySvGRPC\\Model\\Map\\SinhVienMap.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T07:34:53.59Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "LopHoc.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Model\\Map\\LopHoc.cs",
+              "RelativeDocumentMoniker": "..\\gRPCSinhVien\\QuanLySvGRPC\\Model\\Map\\LopHoc.cs",
+              "ToolTip": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Model\\Map\\LopHoc.cs",
+              "RelativeToolTip": "..\\gRPCSinhVien\\QuanLySvGRPC\\Model\\Map\\LopHoc.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T07:34:42.662Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "LopHocRepository.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Repository\\LopHocRepository.cs",
+              "RelativeDocumentMoniker": "..\\gRPCSinhVien\\QuanLySvGRPC\\Repository\\LopHocRepository.cs",
+              "ToolTip": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Repository\\LopHocRepository.cs",
+              "RelativeToolTip": "..\\gRPCSinhVien\\QuanLySvGRPC\\Repository\\LopHocRepository.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T02:17:17.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "FluentNHibernateHelper.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\FluentNHibernateHelper.cs",
+              "RelativeDocumentMoniker": "..\\gRPCSinhVien\\QuanLySvGRPC\\FluentNHibernateHelper.cs",
+              "ToolTip": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\FluentNHibernateHelper.cs",
+              "RelativeToolTip": "..\\gRPCSinhVien\\QuanLySvGRPC\\FluentNHibernateHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-11T08:41:12.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "GiaoVienMap.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Model\\Map\\GiaoVienMap.cs",
+              "RelativeDocumentMoniker": "..\\gRPCSinhVien\\QuanLySvGRPC\\Model\\Map\\GiaoVienMap.cs",
+              "ToolTip": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Model\\Map\\GiaoVienMap.cs",
+              "RelativeToolTip": "..\\gRPCSinhVien\\QuanLySvGRPC\\Model\\Map\\GiaoVienMap.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T07:34:22.389Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "PageViewDTO.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\DTO\\PageViewDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\PageViewDTO.cs",
+              "ToolTip": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\DTO\\PageViewDTO.cs",
+              "RelativeToolTip": "DTO\\PageViewDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T07:49:38.288Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "LopHocDTO.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\DTO\\LopHocDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\LopHocDTO.cs",
+              "ToolTip": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\DTO\\LopHocDTO.cs",
+              "RelativeToolTip": "DTO\\LopHocDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAsAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T07:49:37.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "BlazorQuanLySinhVien.csproj",
+              "DocumentMoniker": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\BlazorQuanLySinhVien.csproj",
+              "RelativeDocumentMoniker": "BlazorQuanLySinhVien.csproj",
+              "ToolTip": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\BlazorQuanLySinhVien.csproj",
+              "RelativeToolTip": "BlazorQuanLySinhVien.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-10T01:16:43.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "NavMenu.razor",
+              "DocumentMoniker": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\Shared\\NavMenu.razor",
+              "RelativeDocumentMoniker": "Shared\\NavMenu.razor",
+              "ToolTip": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\Shared\\NavMenu.razor",
+              "RelativeToolTip": "Shared\\NavMenu.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-07T07:00:11.459Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "SinhVienSearch.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Model\\SinhVienSearch.cs",
+              "RelativeDocumentMoniker": "..\\gRPCSinhVien\\QuanLySvGRPC\\Model\\SinhVienSearch.cs",
+              "ToolTip": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Model\\SinhVienSearch.cs",
+              "RelativeToolTip": "..\\gRPCSinhVien\\QuanLySvGRPC\\Model\\SinhVienSearch.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T06:42:46.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "LopHocServiceBlazor.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\ServiceBlazor\\LopHocServiceBlazor.cs",
+              "RelativeDocumentMoniker": "ServiceBlazor\\LopHocServiceBlazor.cs",
+              "ToolTip": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\ServiceBlazor\\LopHocServiceBlazor.cs",
+              "RelativeToolTip": "ServiceBlazor\\LopHocServiceBlazor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAcAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T07:42:34.416Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "QuanLyGv.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Service\\QuanLyGv.cs",
+              "RelativeDocumentMoniker": "..\\gRPCSinhVien\\QuanLySvGRPC\\Service\\QuanLyGv.cs",
+              "ToolTip": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Service\\QuanLyGv.cs",
+              "RelativeToolTip": "..\\gRPCSinhVien\\QuanLySvGRPC\\Service\\QuanLyGv.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAASwB4AAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T02:01:19.092Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "QuanLyLh.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Service\\QuanLyLh.cs",
+              "RelativeDocumentMoniker": "..\\gRPCSinhVien\\QuanLySvGRPC\\Service\\QuanLyLh.cs",
+              "ToolTip": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Service\\QuanLyLh.cs",
+              "RelativeToolTip": "..\\gRPCSinhVien\\QuanLySvGRPC\\Service\\QuanLyLh.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBZwB0AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T02:01:23.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "ILopHocServiceBlazor.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\ServiceBlazor\\Interface\\ILopHocServiceBlazor.cs",
+              "RelativeDocumentMoniker": "ServiceBlazor\\Interface\\ILopHocServiceBlazor.cs",
+              "ToolTip": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\ServiceBlazor\\Interface\\ILopHocServiceBlazor.cs",
+              "RelativeToolTip": "ServiceBlazor\\Interface\\ILopHocServiceBlazor.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T02:25:26.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "GreeterService.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\ServicesGRPC\\GreeterService.cs",
+              "RelativeDocumentMoniker": "..\\gRPCSinhVien\\QuanLySvGRPC\\ServicesGRPC\\GreeterService.cs",
+              "ToolTip": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\ServicesGRPC\\GreeterService.cs",
+              "RelativeToolTip": "..\\gRPCSinhVien\\QuanLySvGRPC\\ServicesGRPC\\GreeterService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAUAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T02:04:39.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "ILopHocRepository.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Repository\\Interface\\ILopHocRepository.cs",
+              "RelativeDocumentMoniker": "..\\gRPCSinhVien\\QuanLySvGRPC\\Repository\\Interface\\ILopHocRepository.cs",
+              "ToolTip": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Repository\\Interface\\ILopHocRepository.cs",
+              "RelativeToolTip": "..\\gRPCSinhVien\\QuanLySvGRPC\\Repository\\Interface\\ILopHocRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T02:18:11.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "IGiaoVienRepository.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Repository\\Interface\\IGiaoVienRepository.cs",
+              "RelativeDocumentMoniker": "..\\gRPCSinhVien\\QuanLySvGRPC\\Repository\\Interface\\IGiaoVienRepository.cs",
+              "ToolTip": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Repository\\Interface\\IGiaoVienRepository.cs",
+              "RelativeToolTip": "..\\gRPCSinhVien\\QuanLySvGRPC\\Repository\\Interface\\IGiaoVienRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T02:18:06.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "IQuanLyLh.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Service\\Interface\\IQuanLyLh.cs",
+              "RelativeDocumentMoniker": "..\\gRPCSinhVien\\QuanLySvGRPC\\Service\\Interface\\IQuanLyLh.cs",
+              "ToolTip": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Service\\Interface\\IQuanLyLh.cs",
+              "RelativeToolTip": "..\\gRPCSinhVien\\QuanLySvGRPC\\Service\\Interface\\IQuanLyLh.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T02:02:24.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "IQuanLyGv.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Service\\Interface\\IQuanLyGv.cs",
+              "RelativeDocumentMoniker": "..\\gRPCSinhVien\\QuanLySvGRPC\\Service\\Interface\\IQuanLyGv.cs",
+              "ToolTip": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Service\\Interface\\IQuanLyGv.cs",
+              "RelativeToolTip": "..\\gRPCSinhVien\\QuanLySvGRPC\\Service\\Interface\\IQuanLyGv.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-10T02:02:23.54Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "PageView.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Model\\PageView.cs",
+              "RelativeDocumentMoniker": "..\\gRPCSinhVien\\QuanLySvGRPC\\Model\\PageView.cs",
+              "ToolTip": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\Model\\PageView.cs",
+              "RelativeToolTip": "..\\gRPCSinhVien\\QuanLySvGRPC\\Model\\PageView.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAQAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-06T07:35:35.434Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "App.razor",
+              "DocumentMoniker": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\App.razor",
+              "RelativeDocumentMoniker": "App.razor",
+              "ToolTip": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\App.razor",
+              "RelativeToolTip": "App.razor",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-07T10:06:25.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "FileUtils.cs",
+              "DocumentMoniker": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\Utils\\FileUtils.cs",
+              "RelativeDocumentMoniker": "Utils\\FileUtils.cs",
+              "ToolTip": "D:\\daotaoSDS\\BlazorQuanLySinhVien\\Utils\\FileUtils.cs",
+              "RelativeToolTip": "Utils\\FileUtils.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-07T06:46:15.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "QuanLySvGRPC.csproj",
+              "DocumentMoniker": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\QuanLySvGRPC.csproj",
+              "RelativeDocumentMoniker": "..\\gRPCSinhVien\\QuanLySvGRPC\\QuanLySvGRPC.csproj",
+              "ToolTip": "D:\\daotaoSDS\\gRPCSinhVien\\QuanLySvGRPC\\QuanLySvGRPC.csproj",
+              "RelativeToolTip": "..\\gRPCSinhVien\\QuanLySvGRPC\\QuanLySvGRPC.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-06-10T01:16:43.934Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "Microsoft.Common.CurrentVersion.targets",
+              "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
+              "ViewState": "AQIAADQSAAAAAAAAAAAlwEwSAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2024-06-07T01:10:32.937Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

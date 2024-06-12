@@ -1,0 +1,5 @@
+D:\daotaoSDS\ClassMap\obj\Debug\net7.0\Shared.csproj.AssemblyReference.cache
+D:\daotaoSDS\ClassMap\obj\Debug\net7.0\Shared.GeneratedMSBuildEditorConfig.editorconfig
+D:\daotaoSDS\ClassMap\obj\Debug\net7.0\Shared.AssemblyInfoInputs.cache
+D:\daotaoSDS\ClassMap\obj\Debug\net7.0\Shared.AssemblyInfo.cs
+D:\daotaoSDS\ClassMap\obj\Debug\net7.0\Shared.csproj.CoreCompileInputs.cache

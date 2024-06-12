@@ -1,0 +1,42 @@
+﻿@page "/chart"
+
+@using AntDesign.Charts
+@using BlazorQuanLySinhVien.ServiceBlazor.Interface
+@using Title = AntDesign.Charts.Title
+@inject NavigationManager NavigationManager
+@inject HttpClient HttpClient
+@inject ISinhVienServiceBlazor _sinhVienService;
+
+<h3>Thống kê cho sinh viên</h3>
+    <Tabs>
+    
+    <TabPane Key="1">
+        
+        <TabTemplate>Biểu đồ thống kê sinh viên theo lớp</TabTemplate>
+        
+        <ChildContent>
+            <div>
+                <RadioGroup @bind-Value="@value" OnChange="(int selectedValue) => HandleRadioChangeAsync(selectedValue)">
+                    <Radio Value="0">Tất cả</Radio>
+                    <Radio Value="1">Sinh viên nam</Radio>
+                    <Radio Value="2">Sinh viên nữ</Radio>
+                </RadioGroup>
+            </div>
+            <AntDesign.Charts.Column @ref="barChart" Data="@data1" Config="config1" />
+        </ChildContent>
+    </TabPane>
+    <TabPane Key="2">
+        <TabTemplate>Thống kê phần trăm trên tổng sinh viên</TabTemplate>
+        <ChildContent>
+            <Pie Data="@data2" @ref="pieChart" Config="config2" OnFirstRender="ThongKeAsync" />
+        </ChildContent>
+    </TabPane>
+
+       @*  <TabPane Key="2">
+            <TabTemplate>Tab2</TabTemplate>
+            <ChildContent>
+                <Histogram Data="data2" Config="config2" />
+            </ChildContent>
+        </TabPane> *@
+    </Tabs>
+
