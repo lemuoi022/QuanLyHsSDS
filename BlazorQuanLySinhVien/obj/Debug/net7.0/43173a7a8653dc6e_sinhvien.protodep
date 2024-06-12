@@ -1,4 +1,0 @@
-obj\Debug\net7.0/Sinhvien.cs \
-obj\Debug\net7.0/SinhvienGrpc.cs: C:/Users/lexuanmuoi/.nuget/packages/grpc.tools/2.64.0/build/native/include/google/protobuf/wrappers.proto\
- C:/Users/lexuanmuoi/.nuget/packages/grpc.tools/2.64.0/build/native/include/google/protobuf/timestamp.proto\
- ../gRPCSinhVien/QuanLySvGRPC/Protos/sinhvien.proto
