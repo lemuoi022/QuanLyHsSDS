@@ -14,18 +14,18 @@ namespace BlazorQuanLySinhVien.ServiceBlazor
         {
             _sinhVienClient = sinhVienClient;
         }
-        //public async Task<List<SinhVienDTO>> getAllSinhVienAsync(List<SinhVienDTO> listSinhVien)
-        //{
-        //    var request = new SinhVienRequest { Id = 1 };
-        //    var response = await _sinhVienClient.GetAllSinhVienAsync(request);
-        //    int stt = 1;
-        //    listSinhVien = response.SvReply.Select(sv =>
-        //    {
+        public async Task<List<SinhVienDTO>> GetAllSinhVienAsync(List<SinhVienDTO> listSinhVien)
+        {
+            var request = new SinhVienRequest { Id = 1 };
+            var response = await _sinhVienClient.GetAllSinhVienAsync(request);
+            int stt = 1;
+            listSinhVien = response.SvReply.Select(sv =>
+            {
 
-        //        return new SinhVienDTO() { Stt = stt++, ID = sv.ID, Ten = sv.Ten, DiaChi = sv.DiaChi, NgaySinh = sv.Ngaysinh.ToDateTime(), TenLop = sv.LopHoc.TenLop, IdLopHoc = sv.LopHoc.ID };
-        //    }).ToList();
-        //    return listSinhVien;
-        //}
+                return new SinhVienDTO() { Stt = stt++, ID = sv.ID, Ten = sv.Ten, DiaChi = sv.DiaChi, NgaySinh = sv.Ngaysinh.ToDateTime(), TenLop = sv.LopHoc.TenLop, IdLopHoc = sv.LopHoc.ID };
+            }).ToList();
+            return listSinhVien;
+        }
         public async Task<bool> DelSinhVienAsync(SinhVienDTO sinhVienDTO)
         {
             var request = new SinhVienRequest { Id = sinhVienDTO.ID };
