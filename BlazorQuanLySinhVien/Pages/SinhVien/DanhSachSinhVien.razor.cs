@@ -131,7 +131,6 @@ namespace BlazorQuanLySinhVien.Pages.SinhVien
         protected async void CreateDocumentAsync()
         {
             List<SinhVienDTO> listAllSinhVien = new List<SinhVienDTO>();
-            await LoadPageSinhVienAsync();
             var listExport = await _sinhVienService.GetAllSinhVienAsync(listAllSinhVien);
             excelStream = _excelService.CreateExcel(listExport);
             await JS.SaveAs("SinhVien.xlsx", excelStream.ToArray());
