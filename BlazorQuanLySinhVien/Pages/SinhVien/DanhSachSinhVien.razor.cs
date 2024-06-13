@@ -74,9 +74,11 @@ namespace BlazorQuanLySinhVien.Pages.SinhVien
             var del = await _sinhVienService.DelSinhVienAsync(sinhVienDTO);
             if (del)
             {
-                await LoadPageSinhVienAsync();
-                await SuccessAsync();
-                
+                //await LoadPageSinhVienAsync();
+                //await SuccessAsync();
+                Task loadPage = LoadPageSinhVienAsync();
+                Task succsess = SuccessAsync();
+                await Task.WhenAll(loadPage, succsess);
             }
             
         }
